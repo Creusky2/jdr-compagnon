@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8" />
+<title>JDR Compagnon</title>
+<script>
+  var p = location.pathname;
+  var i = p.indexOf('/app/');
+  location.replace(i >= 0 ? p.slice(0, i + 5) : p.split('/').slice(0, 2).join('/') + '/');
+</script>
+</html>
