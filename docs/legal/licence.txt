@@ -1,0 +1,65 @@
+﻿CONTRAT DE LICENCE D'UTILISATION — JDR COMPAGNON
+
+En installant ou en utilisant JDR Compagnon (« le Logiciel »), vous acceptez le présent contrat.
+Si vous ne l'acceptez pas, n'installez pas le Logiciel.
+
+1. ÉDITEUR
+Le Logiciel est édité par Yoann [nom complet, statut et numéro SIRET à compléter], [adresse à
+compléter] (« l'Éditeur »). Contact : [adresse électronique du support à compléter].
+
+2. LICENCE ACCORDÉE
+L'Éditeur vous accorde une licence personnelle, non exclusive et non transférable d'utiliser le
+Logiciel, pour la durée de protection des droits d'auteur, sauf résiliation (article 8).
+- Édition gratuite : utilisation privée ou associative, sans frais.
+- Édition Pro : fonctions supplémentaires débloquées par une clé de licence nominative. La clé est
+  utilisable sur les appareils de son titulaire, pour sa table de jeu. Elle ne peut être ni
+  partagée, ni publiée, ni revendue. Une clé à durée limitée cesse de débloquer l'édition Pro à sa
+  date de fin. Une clé obtenue frauduleusement, publiée ou remboursée peut être désactivée à
+  distance : le Logiciel consulte à cette fin une liste publiée par l'Éditeur ; les campagnes ne
+  sont jamais touchées, seule l'édition Pro est retirée.
+
+3. RESTRICTIONS
+Sauf dans les cas permis par la loi (article L.122-6-1 du Code de la propriété intellectuelle),
+vous vous interdisez de : copier le Logiciel pour le distribuer, le louer, le revendre ; le
+modifier, le décompiler ou contourner la vérification des licences ; retirer les mentions de
+droits d'auteur et de licences.
+
+4. CONTENUS DE TIERS ET DE L'UTILISATEUR
+Le Logiciel contient des éléments du System Reference Document 5.2.1 (texte officiel en français)
+et du System Reference Document 5.1, sous licence Creative Commons Attribution 4.0 International,
+ainsi que des composants libres dont les licences sont listées dans « Réglages › Aide et
+assistance › À propos ». Le Logiciel est compatible avec la cinquième édition ; il n'est ni affilié
+à l'éditeur de ces documents, ni approuvé par lui.
+Vous restez seul responsable des contenus que vous importez (images, sons, modèles 3D, textes) et
+de leur licence.
+
+5. DONNÉES PERSONNELLES
+Vos campagnes, fiches et fichiers restent sur votre ordinateur. Les échanges avec internet sont
+décrits dans la politique de confidentialité, consultable dans le Logiciel
+(« Réglages › Aide et assistance »).
+
+6. MISES À JOUR ET ASSISTANCE
+Le Logiciel peut rechercher et installer des mises à jour (réglage modifiable). L'Éditeur peut
+afficher des annonces sur l'écran d'accueil (réglage modifiable). L'assistance est fournie par
+courrier électronique, sans délai garanti pour l'édition gratuite.
+
+7. GARANTIE ET RESPONSABILITÉ
+L'Éditeur s'efforce de fournir un Logiciel fiable et met à disposition des mises à jour de
+correction et de sécurité pendant au moins deux ans après chaque achat de l'édition Pro, et tant
+que l'édition gratuite est distribuée. Le Logiciel fait une copie de sécurité automatique chaque
+jour ; il est recommandé de faire aussi des sauvegardes (« Réglages › Données de la table »).
+Pour les utilisateurs professionnels, la responsabilité de l'Éditeur est limitée au prix payé.
+Rien dans ce contrat ne limite les droits que le consommateur tient de la loi, notamment la
+garantie légale de conformité des contenus et services numériques (articles L.224-25-12 et
+suivants du Code de la consommation).
+
+8. RÉSILIATION
+Ce contrat prend fin automatiquement si vous en violez les termes ; vous devez alors cesser
+d'utiliser le Logiciel. Vous pouvez y mettre fin à tout moment en désinstallant le Logiciel.
+
+9. DROIT APPLICABLE
+Le présent contrat est soumis au droit français. En cas de litige, et après une tentative de
+règlement amiable, les tribunaux compétents sont ceux désignés par la loi. Le consommateur peut
+recourir gratuitement à un médiateur de la consommation [nom et coordonnées à compléter].
+
+Version du contrat : 1.0 — octobre 2026.
