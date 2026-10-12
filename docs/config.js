@@ -6,11 +6,10 @@ window.JDR_SITE = {
   "repo": "jdr-compagnon",
   "supportEmail": "creusky@hotmail.com",
   "requestUrl": "",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "news": [
-    "Carnet du MJ sur téléphone, sans PC : depuis le site (« Ouvrir le carnet »), préparez aventures, cartes, scènes, PNJ et rencontres sur votre téléphone, même sans réseau ; il s'ajoute à l'écran d'accueil comme une application. « Envoyer au PC » crée un fichier .jdr à glisser sur la fenêtre de JDR Compagnon : ce que la campagne a déjà est mis à jour, sans doublon et sans effacer ce qui a été joué (brouillard découvert, pions des joueurs, étapes jouées). « Ouvrir un fichier du PC » emporte une aventure partagée depuis le PC.",
-    "L'écran du MJ sur téléphone : la carte prend presque tout l'écran, ses commandes tiennent dans une barre dessous (cartes, outil, options repliables, 3D, plein écran) ; en-tête et onglets plus fins ; Scénario en liste puis étape ; Table sur une seule rangée ; actions secondaires du combat dans « ⋯ ».",
-    "Plein écran de la carte, pour le MJ et pour les joueurs : en-tête et onglets s'effacent.",
-    "Une scène en grand sur votre écran seulement : touchez son image pour la montrer autour de vous, sans l'envoyer aux joueurs."
+    "La 3D au doigt, comme une carte routière : un doigt fait glisser la carte (comme en 2D, au lieu de la faire tourner), deux doigts zooment et tournent, deux doigts glissés ensemble vers le haut ou le bas inclinent la vue. Une boussole apparaît quand la vue est tournée : un toucher remet le nord en haut.",
+    "La carte des joueurs sur téléphone a la même barre que celle du MJ, sous la carte : outil, mon pion, tout voir, 3D, plein écran. Les boutons qui se ressemblaient (tout voir, plein écran, vue de dessus) ont chacun leur dessin.",
+    "Plus cohérent sur téléphone : la palette des sols réapparaît (outils Sol et Pièce), l'aide de la carte décrit la barre du téléphone, réglages en trois onglets courts (Cet appareil, Table, Aide), réactions rapides séparées des chuchotements (toute la table les voit), combat du joueur sans message en double."
   ]
 };
