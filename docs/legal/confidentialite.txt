@@ -1,0 +1,59 @@
+POLITIQUE DE CONFIDENTIALITÉ — JDR COMPAGNON
+
+JDR Compagnon fonctionne sur votre ordinateur. Il n'y a ni compte à créer, ni statistiques
+d'utilisation, ni publicité.
+
+CE QUI RESTE SUR VOTRE ORDINATEUR
+Campagnes, fiches des personnages, prénoms des joueurs, notes, cartes, images, sons, journaux de
+fonctionnement et copies de sécurité sont enregistrés dans le dossier de données de l'application
+(%APPDATA%\JDR Compagnon). Les téléphones des joueurs se connectent directement à votre ordinateur
+par le wifi ; ils ne gardent que leur identifiant de joueur et leurs préférences d'affichage.
+Le maître du jeu est responsable des informations qu'il saisit sur ses joueurs.
+
+CE QUI PASSE PAR INTERNET
+- Mises à jour : l'application interroge le dépôt GitHub de l'Éditeur (GitHub, Inc.) au
+  démarrage puis toutes les quatre heures. Désactivable : Réglages › Mises à jour.
+- Annonces de l'Éditeur : lecture d'un fichier d'annonces sur GitHub, au démarrage puis toutes les
+  six heures. Il sert aussi à désactiver des clés Pro frauduleuses (cette vérification reste
+  active). Aucune information sur vous ou votre table n'est envoyée ; GitHub voit l'adresse IP de
+  la connexion, comme pour toute page web. Affichage des annonces désactivable : Réglages › Aide
+  et assistance.
+- Assistant IA (édition Pro, facultatif) : seulement si vous le réglez et seulement quand vous lui
+  demandez quelque chose. Vous choisissez le service : Google Gemini (clé avec facturation
+  activée ; service réservé aux personnes majeures selon les conditions de Google), un service
+  compatible OpenAI (OpenAI, Mistral…) avec votre clé, ou un modèle installé sur votre ordinateur
+  (Ollama, LM Studio : rien ne quitte alors votre ordinateur). Chaque demande envoie votre texte et
+  des extraits de la campagne : nom de la campagne, héros (nom, espèce, classe, niveau), scène,
+  notes du carnet qui en parlent, chronique récente. Jamais les noms ou appareils des joueurs, leurs
+  messages privés, leurs carnets, ni les codes et clés. Le service choisi les traite selon ses
+  propres conditions. Les textes produits sont marqués « généré par IA ». La clé reste sur votre
+  ordinateur.
+- Enregistrement de la séance (édition Pro, facultatif) : le micro du PC du MJ n'enregistre
+  qu'après l'accord de chaque joueur connecté, donné sur son téléphone ; un voyant reste affiché
+  chez tous et un refus arrête l'enregistrement. L'audio reste sur le PC et n'est envoyé qu'au
+  service d'IA choisi, au moment du résumé, puis il est effacé (et à chaque démarrage de
+  l'application). Pour un mineur, l'accord d'un parent est nécessaire.
+- Copie dans un dossier synchronisé (facultatif) : si vous choisissez un dossier OneDrive, Google
+  Drive ou Dropbox, une sauvegarde complète de la table y est copiée chaque jour ; votre service de
+  synchronisation l'envoie ensuite selon ses conditions.
+- Bibliothèque 3D (facultatif) : téléchargement de modèles depuis GitHub.
+- Jeu à distance (édition Pro, facultatif) : passe par Tailscale, selon ses conditions.
+
+RAPPORT DE DIAGNOSTIC
+Le bouton « Créer un rapport de diagnostic » enregistre un fichier sur votre ordinateur : version,
+système, comptes (nombre de fiches, de cartes…), journaux de fonctionnement des derniers jours. Il
+ne contient ni la campagne, ni les fiches, ni les codes, clés ou jetons. Il n'est envoyé que si
+vous le transmettez vous-même au support ; il est alors utilisé uniquement pour résoudre votre
+problème, puis supprimé au plus tard trois mois après la clôture de la demande.
+
+LICENCE PRO
+Pour vous délivrer une clé, l'Éditeur conserve votre nom, votre adresse électronique et la date
+d'achat, le temps nécessaire à la gestion de la licence et aux obligations comptables. La clé
+elle-même ne contient que votre nom, son numéro et ses dates (pas votre adresse électronique).
+
+VOS DROITS
+Vous disposez d'un droit d'accès, de rectification et d'effacement des informations que l'Éditeur
+détient (licence, échanges avec le support) : [adresse électronique du support à compléter]. Vous
+pouvez saisir la CNIL (www.cnil.fr).
+
+Version : 1.0 — octobre 2026.
