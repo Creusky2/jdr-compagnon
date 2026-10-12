@@ -1,0 +1,695 @@
+/* Site de présentation de JDR Compagnon : le « grimoire nocturne » de l'application (nuit violette,
+   or, Cinzel pour les titres, Inter pour le texte, EB Garamond pour les textes lus à voix haute).
+   Mise en page : une colonne de 72rem, sections alternant texte et captures, la tablette du MJ et le
+   téléphone d'un joueur côte à côte en ouverture. Un seul thème, sombre, par choix (celui de l'app). */
+:root {
+  --night: #0a0812;
+  --night-2: #151225;
+  --night-3: #1f1b31;
+  --line: #2f2a45;
+  --ink: #ece9f5;
+  --muted: #aaa3c4;
+  --faint: #807a9f;
+  --gold: #f2b84b;
+  --gold-soft: #f8d48a;
+  --gold-deep: #b8741a;
+  --arcane: #a78bfa;
+  --life: #4ade80;
+  --on-gold: #1a1206;
+  --display: 'Cinzel', Georgia, 'Times New Roman', serif;
+  --body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --book: 'EB Garamond', Georgia, serif;
+  --radius: 22px;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(60rem 36rem at 75% -10%, rgb(167 139 250 / 0.14), transparent 70%),
+    radial-gradient(50rem 30rem at 10% 0%, rgb(242 184 75 / 0.1), transparent 70%), var(--night);
+  color: var(--ink);
+  font: 400 1.0625rem/1.65 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--gold-soft);
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: max(1rem, 4vw);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--display);
+  font-weight: 700;
+  line-height: 1.12;
+  text-wrap: balance;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 4.6vw, 3.4rem);
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 3.6vw, 2.5rem);
+  color: var(--gold-soft);
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+p {
+  margin: 0;
+}
+
+.eyebrow {
+  font: 600 0.78rem/1 var(--body);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: var(--muted);
+  max-width: 38em;
+}
+
+/* ---------- barre du haut ---------- */
+.top {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 10;
+  background: rgb(10 8 18 / 0.82);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgb(47 42 69 / 0.7);
+}
+
+.top .wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  min-height: 4rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--gold-soft);
+  text-decoration: none;
+  font: 700 1.05rem/1 var(--display);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.brand img {
+  width: 34px;
+  height: 34px;
+}
+
+.top nav {
+  display: flex;
+  gap: 1.1rem;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.top nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.top nav a:hover {
+  color: var(--ink);
+}
+
+/* ---------- boutons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 3rem;
+  padding: 0 1.4rem;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  font: 600 1rem/1 var(--body);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    filter 0.15s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.08);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-gold {
+  background: linear-gradient(180deg, var(--gold-soft), var(--gold) 55%, var(--gold-deep));
+  color: var(--on-gold);
+  box-shadow: 0 10px 30px -12px rgb(242 184 75 / 0.6);
+}
+
+.btn-ghost {
+  background: rgb(255 255 255 / 0.04);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.btn small {
+  font-weight: 500;
+  opacity: 0.75;
+}
+
+.top .btn {
+  min-height: 2.5rem;
+  padding: 0 1rem;
+  font-size: 0.92rem;
+}
+
+/* ---------- ouverture ---------- */
+.hero {
+  padding-block: clamp(3rem, 7vw, 6rem) clamp(2rem, 5vw, 4rem);
+}
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 3.5rem);
+}
+
+.hero-text {
+  display: grid;
+  gap: 1.4rem;
+  max-width: 44rem;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  color: var(--faint);
+  font-size: 0.92rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.facts li::before {
+  content: '◆';
+  color: var(--gold-deep);
+  font-size: 0.6rem;
+  margin-right: 0.45rem;
+  vertical-align: 2px;
+}
+
+/* tablette du MJ et téléphone du joueur, posés l'un sur l'autre */
+.devices {
+  position: relative;
+  padding-right: 14%;
+  padding-bottom: 12%;
+}
+
+.tablet {
+  border-radius: 26px;
+  padding: 12px;
+  background: linear-gradient(160deg, #2a2440, #120f1f);
+  border: 1px solid var(--line);
+  box-shadow: 0 40px 80px -30px rgb(0 0 0 / 0.8);
+}
+
+.tablet img {
+  border-radius: 14px;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.phone {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 25%;
+  border-radius: clamp(16px, 3vw, 30px);
+  padding: clamp(4px, 0.7vw, 8px);
+  background: linear-gradient(160deg, #2a2440, #120f1f);
+  border: 1px solid var(--line);
+  box-shadow: 0 30px 60px -20px rgb(0 0 0 / 0.9);
+}
+
+.phone img {
+  border-radius: clamp(12px, 2.3vw, 23px);
+  width: 100%;
+}
+
+/* ---------- sections ---------- */
+section {
+  padding-block: clamp(3rem, 7vw, 5.5rem);
+}
+
+.section-head {
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 2.4rem;
+  max-width: 44rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: step;
+}
+
+.steps li {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.4rem;
+  border-radius: var(--radius);
+  background: var(--night-2);
+  border: 1px solid var(--line);
+  counter-increment: step;
+}
+
+.steps li::before {
+  content: counter(step);
+  display: grid;
+  place-items: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--on-gold);
+  font: 700 1.05rem/1 var(--display);
+}
+
+.steps p,
+.feature p,
+.grid p {
+  color: var(--muted);
+}
+
+/* texte et capture, en alternance */
+.feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.feature + .feature {
+  margin-top: clamp(3rem, 7vw, 5rem);
+}
+
+.feature-text {
+  display: grid;
+  gap: 0.9rem;
+  min-width: 0;
+}
+
+.feature ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  display: grid;
+  gap: 0.35rem;
+}
+
+.shot {
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: 0 30px 60px -30px rgb(0 0 0 / 0.9);
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 30rem;
+  justify-self: center;
+}
+
+.pair .shot {
+  border-radius: 22px;
+}
+
+blockquote {
+  margin: 0;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--gold-deep);
+  background: rgb(242 184 75 / 0.06);
+  border-radius: 0 14px 14px 0;
+  font: italic 1.15rem/1.5 var(--book);
+  color: var(--gold-soft);
+}
+
+/* toutes les fonctions, en grille */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr));
+  gap: 1rem;
+}
+
+.grid article {
+  display: grid;
+  align-content: start;
+  gap: 0.45rem;
+  padding: 1.2rem 1.3rem;
+  border-radius: 18px;
+  background: var(--night-2);
+  border: 1px solid var(--line);
+  min-width: 0;
+}
+
+.grid h3 {
+  font-family: var(--body);
+  font-weight: 650;
+  font-size: 1.02rem;
+  color: var(--gold-soft);
+}
+
+/* gratuit et Pro */
+.editions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1rem;
+}
+
+.edition {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  padding: 1.6rem;
+  border-radius: var(--radius);
+  background: var(--night-2);
+  border: 1px solid var(--line);
+}
+
+.edition.pro {
+  border-color: rgb(242 184 75 / 0.45);
+  background: linear-gradient(180deg, rgb(242 184 75 / 0.08), var(--night-2) 40%);
+}
+
+.edition .price {
+  font: 700 1.6rem/1.1 var(--display);
+}
+
+.edition ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.edition li {
+  display: grid;
+  grid-template-columns: 1.2rem minmax(0, 1fr);
+  gap: 0.5rem;
+  color: var(--muted);
+}
+
+.edition li::before {
+  content: '✓';
+  color: var(--life);
+  font-weight: 700;
+}
+
+.edition.pro li::before {
+  content: '★';
+  color: var(--gold);
+}
+
+/* téléchargement */
+.download {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: clamp(1.4rem, 4vw, 2.4rem);
+  border-radius: 28px;
+  border: 1px solid rgb(242 184 75 / 0.35);
+  background: radial-gradient(40rem 20rem at 100% 0%, rgb(167 139 250 / 0.12), transparent 70%), var(--night-2);
+}
+
+.download ol {
+  margin: 0;
+  padding-left: 1.3rem;
+  display: grid;
+  gap: 0.6rem;
+  color: var(--muted);
+}
+
+.version {
+  color: var(--faint);
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.note {
+  font-size: 0.92rem;
+  color: var(--faint);
+}
+
+/* demande */
+form {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.2rem, 4vw, 2rem);
+  border-radius: var(--radius);
+  background: var(--night-2);
+  border: 1px solid var(--line);
+  max-width: 44rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  font: 600 0.8rem/1.2 var(--body);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--night);
+  color: var(--ink);
+  font: 400 1rem/1.4 var(--body);
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.status {
+  min-height: 1.5em;
+  color: var(--muted);
+}
+
+.status.ok {
+  color: var(--life);
+}
+
+.status.err {
+  color: #f87171;
+}
+
+.mailbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.mailbox code {
+  font:
+    600 0.95rem/1 ui-monospace,
+    Consolas,
+    monospace;
+  color: var(--gold-soft);
+  user-select: all;
+}
+
+/* questions */
+details {
+  border-bottom: 1px solid var(--line);
+  padding-block: 1rem;
+  max-width: 50rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+summary::after {
+  content: '+';
+  color: var(--gold);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+details[open] summary::after {
+  content: '−';
+}
+
+details p {
+  margin-top: 0.7rem;
+  color: var(--muted);
+  max-width: 44rem;
+}
+
+.news {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  display: grid;
+  gap: 0.4rem;
+}
+
+/* pied de page */
+footer {
+  border-top: 1px solid var(--line);
+  padding-block: 2.5rem;
+  color: var(--faint);
+  font-size: 0.88rem;
+}
+
+footer .wrap {
+  display: grid;
+  gap: 1rem;
+}
+
+footer .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.4rem;
+}
+
+/* ---------- grands écrans ---------- */
+@media (min-width: 60rem) {
+  .hero .wrap {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    align-items: center;
+  }
+
+  .feature {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+
+  .feature.flip .feature-text {
+    order: 2;
+  }
+
+  .download {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+@media (max-width: 44rem) {
+  .top nav {
+    display: none;
+  }
+
+  .top .btn {
+    margin-left: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .btn {
+    transition: none;
+  }
+}
