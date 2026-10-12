@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>JDR Compagnon</title>
+    <meta
+      name="description"
+      content="L’application de table pour le jeu de rôle : le MJ sur sa tablette ou son PC, les joueurs sur leur téléphone. Cartes 2D et 3D, scénario, combat, dés, règles 2024 en français. Gratuite, sans compte, sans internet."
+    />
+    <meta property="og:title" content="JDR Compagnon" />
+    <meta
+      property="og:description"
+      content="Le MJ sur sa tablette, les joueurs sur leur téléphone : cartes, scénario, combat et dés partagés autour de la table."
+    />
+    <meta property="og:image" content="images/mj-table.jpg" />
+    <meta name="theme-color" content="#0a0812" />
+    <link rel="icon" href="images/favicon-64.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital@1&family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js"></script>
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap">
+        <a class="brand" href="#"><img src="images/icon-192.png" alt="" width="34" height="34" /> JDR Compagnon</a>
+        <nav aria-label="Sections">
+          <a href="#soiree">Une soirée</a>
+          <a href="#fonctions">Fonctions</a>
+          <a href="#editions">Gratuit ou Pro</a>
+          <a href="#demande">Demande</a>
+          <a href="#questions">Questions</a>
+        </nav>
+        <a class="btn btn-gold" href="#telecharger">Télécharger</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero-text">
+            <p class="eyebrow">Jeu de rôle autour de la table</p>
+            <h1>Le MJ sur sa tablette, <span>les joueurs sur leur téléphone.</span></h1>
+            <p class="lead">
+              JDR Compagnon rassemble la table : le maître du jeu prépare et mène la partie, chaque joueur retrouve sa fiche, ses dés et la
+              carte sur son téléphone. Tout se met à jour en direct, sans compte et sans internet.
+            </p>
+            <div class="cta">
+              <a class="btn btn-gold" href="#telecharger" data-download>Télécharger pour Windows</a>
+              <a class="btn btn-ghost" href="#demande">Demander une invitation Pro</a>
+            </div>
+            <ul class="facts">
+              <li>Gratuit</li>
+              <li>Windows 10 et 11</li>
+              <li>Téléphones Android et iPhone</li>
+              <li>Règles 2024 en français</li>
+            </ul>
+          </div>
+          <div class="devices">
+            <div class="tablet">
+              <img
+                src="images/mj-table.jpg"
+                alt="L’écran Table du MJ : l’histoire à gauche, la carte de la crypte au centre, les dés à droite"
+                width="1440"
+                height="900"
+              />
+            </div>
+            <div class="phone">
+              <img src="images/joueur-fiche.jpg" alt="La fiche d’un héros sur le téléphone d’un joueur" width="780" height="1688" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="soiree">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Une soirée de jeu</p>
+            <h2>Trois gestes et la partie commence</h2>
+          </div>
+          <ol class="steps">
+            <li>
+              <h3>Le MJ ouvre la table</h3>
+              <p>Sur son PC ou sa Surface : l’accueil liste ce qu’il reste à préparer, puis « Ouvrir la table » lance la soirée.</p>
+            </li>
+            <li>
+              <h3>Les joueurs scannent le QR code</h3>
+              <p>Sur le même wifi, leur téléphone devient leur fiche, leurs dés et leur carte. Rien à installer de leur côté.</p>
+            </li>
+            <li>
+              <h3>On joue</h3>
+              <p>
+                Le MJ révèle une scène, montre la carte, lance le combat : chaque téléphone suit. Les jets arrivent à la table en direct.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="fonctions">
+        <div class="wrap">
+          <div class="feature">
+            <div class="feature-text">
+              <p class="eyebrow">Cartes</p>
+              <h2>La carte posée sur la table, en 2D ou en 3D</h2>
+              <p>
+                Importez une image, une carte Universal VTT (Dungeondraft, Dungeon Alchemist) ou construisez-la : sols, murs, portes,
+                lumières, 80 décors, effets animés. La vision et le brouillard se calculent tout seuls : chaque joueur ne voit que ce que
+                voit son héros.
+              </p>
+              <ul>
+                <li>Portes secrètes, pièges et objets cachés trouvés par la Perception passive</li>
+                <li>Passages entre cartes, zones de sorts, déplacement en combat</li>
+                <li>Vue à la première personne dans la peau d’un pion</li>
+              </ul>
+            </div>
+            <img
+              class="shot"
+              src="images/mj-carte-3d.jpg"
+              alt="La crypte en vue 3D, avec les figurines des héros et des squelettes"
+              width="1080"
+              height="540"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="feature flip">
+            <div class="feature-text">
+              <p class="eyebrow">Scénario</p>
+              <h2>L’aventure étape par étape</h2>
+              <p>
+                Chapitres, étapes, embranchements. « Jouer l’étape » montre la scène illustrée aux joueurs, affiche la carte, lance
+                l’ambiance et prépare la rencontre. Le texte à lire et les secrets du MJ restent sous ses yeux.
+              </p>
+              <blockquote>Il pleut quand vous atteignez le sommet. Une arche de pierre noire se dresse entre deux chênes morts…</blockquote>
+              <p>Trois aventures complètes sont fournies, avec livret, cartes, PNJ et héros prétirés.</p>
+            </div>
+            <div class="pair">
+              <img
+                class="shot"
+                src="images/joueur-scene.jpg"
+                alt="La scène « Brumeval au crépuscule » sur le téléphone d’un joueur"
+                width="780"
+                height="1688"
+                loading="lazy"
+              />
+              <img
+                class="shot"
+                src="images/joueur-des.jpg"
+                alt="Un 20 naturel sur le téléphone d’un joueur"
+                width="780"
+                height="1688"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-text">
+              <p class="eyebrow">Règles</p>
+              <h2>Les règles 2024, en français officiel</h2>
+              <p>
+                Le texte du SRD 5.2.1 publié en français par l’éditeur du jeu : 330 monstres avec boutons de jet, 339 sorts avec leurs dés
+                selon le niveau, 258 objets magiques, l’équipement et le glossaire des règles. Création de personnage 2014 ou 2024, montée
+                de niveau, repos, jets contre la mort, états.
+              </p>
+            </div>
+            <img
+              class="shot"
+              src="images/mj-bestiaire.jpg"
+              alt="Le profil du dragon rouge adulte, avec ses jets d’attaque et de dégâts"
+              width="1440"
+              height="900"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="section-head" style="margin-top: clamp(3rem, 7vw, 5rem)">
+            <p class="eyebrow">Et aussi</p>
+            <h2>Tout ce qu’il faut pour mener la soirée</h2>
+          </div>
+          <div class="grid">
+            <article>
+              <h3>Photo → carte</h3>
+              <p>
+                Photographiez un plan dessiné ou un plateau quadrillé : la feuille est redressée, les cases comptées, les murs proposés.
+              </p>
+            </article>
+            <article>
+              <h3>Combat</h3>
+              <p>Initiative, points de vie, états, tour des monstres, attaques depuis la carte validées par le MJ.</p>
+            </article>
+            <article>
+              <h3>Jets demandés</h3>
+              <p>Le MJ demande un jet de sauvegarde à trois joueurs : les dégâts s’appliquent selon chaque résultat.</p>
+            </article>
+            <article>
+              <h3>Vrais dés</h3>
+              <p>Les joueurs qui préfèrent leurs dés saisissent le résultat ; il compte comme les autres.</p>
+            </article>
+            <article>
+              <h3>Ambiances et musiques</h3>
+              <p>Taverne, forêt, orage, combat : sons de table synthétisés, plus vos propres musiques.</p>
+            </article>
+            <article>
+              <h3>Écran de table</h3>
+              <p>Une télé ou un projecteur montre la carte à l’échelle des figurines, pendant que le MJ garde la main.</p>
+            </article>
+            <article>
+              <h3>Partager ses créations</h3>
+              <p>Une aventure et tout ce qu’elle utilise dans un seul fichier, à envoyer à un autre MJ ou au catalogue de la communauté.</p>
+            </article>
+            <article>
+              <h3>Sécurité émotionnelle</h3>
+              <p>Carte X anonyme, lignes et voiles proposés en secret au MJ.</p>
+            </article>
+            <article>
+              <h3>Carnet de campagne</h3>
+              <p>PNJ, lieux, quêtes, chronique écrite toute seule, calendrier du monde, documents remis aux joueurs.</p>
+            </article>
+            <article>
+              <h3>Assistant IA</h3>
+              <p>Résumé « Précédemment… », PNJ, descriptions, questions de règles, avec votre propre clé ou un modèle sur votre PC.</p>
+            </article>
+            <article>
+              <h3>Jouer à distance</h3>
+              <p>Un joueur en déplacement rejoint la table par internet, protégé par un code.</p>
+            </article>
+            <article>
+              <h3>Vos données chez vous</h3>
+              <p>Tout reste sur le PC du MJ. Sauvegarde en un fichier, copie quotidienne dans votre OneDrive si vous voulez.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="editions">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Gratuit ou Pro</p>
+            <h2>Toute la table est gratuite</h2>
+            <p class="lead">L’édition Pro ajoute quatre fonctions. Pour l’instant, elle est offerte sur invitation.</p>
+          </div>
+          <div class="editions">
+            <div class="edition">
+              <h3>Édition gratuite</h3>
+              <p class="price">0 €</p>
+              <ul>
+                <li>Téléphones des joueurs : fiche, dés, carte, carnet</li>
+                <li>Cartes 2D, vision, brouillard, constructeur</li>
+                <li>Scénario, scènes, ambiances, combat</li>
+                <li>Règles 2024 en français, création de personnage</li>
+                <li>Partie de démonstration complète</li>
+                <li>Partage, import, sauvegardes</li>
+              </ul>
+            </div>
+            <div class="edition pro">
+              <h3>Édition Pro</h3>
+              <p class="price">Sur invitation</p>
+              <ul>
+                <li>Vue 3D : figurines animées, relief, eau, vue à la première personne</li>
+                <li>Bibliothèque d’aventures complètes, prêtes à jouer</li>
+                <li>Assistant IA pour préparer et improviser</li>
+                <li>Jouer à distance par internet</li>
+              </ul>
+              <a class="btn btn-gold" href="#demande">Demander une invitation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="telecharger">
+        <div class="wrap">
+          <div class="download">
+            <div class="feature-text">
+              <p class="eyebrow">Télécharger</p>
+              <h2>Installer JDR Compagnon</h2>
+              <p>
+                Sur le PC ou la tablette Windows du MJ. Les joueurs n’installent rien : ils scannent le QR code affiché par l’application.
+              </p>
+              <div class="cta">
+                <a class="btn btn-gold" href="#" data-download>Télécharger pour Windows</a>
+              </div>
+              <p class="version" id="version">Windows 10 et 11, 64 bits. Les mises à jour arrivent ensuite toutes seules.</p>
+            </div>
+            <ol>
+              <li>Lancez le fichier « JDR-Compagnon-Setup-….exe ».</li>
+              <li>
+                Si Windows affiche « Windows a protégé votre ordinateur » : <strong>Informations complémentaires</strong>, puis
+                <strong>Exécuter quand même</strong>. L’application n’est pas encore signée par un certificat payant.
+              </li>
+              <li>
+                À la première ouverture, autorisez l’accès au réseau privé : c’est ce qui permet aux téléphones de rejoindre la table.
+              </li>
+              <li>Invitation Pro reçue : touchez « Activer dans JDR Compagnon », ou collez la clé dans Réglages › Édition Pro.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="demande">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Demande</p>
+            <h2>Une invitation, une question, un souci ?</h2>
+            <p class="lead">Écrivez-nous : une invitation Pro pour votre groupe, une idée, ou un problème rencontré.</p>
+          </div>
+          <form id="request" novalidate>
+            <div class="row">
+              <label for="r-name"
+                >Prénom ou pseudo<input id="r-name" name="name" autocomplete="given-name" required maxlength="60"
+              /></label>
+              <label for="r-email"
+                >E-mail<input id="r-email" name="email" type="email" autocomplete="email" required maxlength="120"
+              /></label>
+            </div>
+            <label for="r-kind"
+              >Votre demande
+              <select id="r-kind" name="kind">
+                <option value="invitation">Une invitation à l’édition Pro</option>
+                <option value="question">Une question</option>
+                <option value="probleme">Un problème avec l’application</option>
+                <option value="contenu">Proposer une aventure ou une carte</option>
+              </select>
+            </label>
+            <label for="r-message"
+              >Message
+              <textarea
+                id="r-message"
+                name="message"
+                maxlength="2000"
+                placeholder="Votre groupe, votre façon de jouer, ce qui vous amène…"
+              ></textarea>
+            </label>
+            <div class="cta">
+              <button class="btn btn-gold" type="submit">Envoyer la demande</button>
+            </div>
+            <p class="status" id="r-status" role="status"></p>
+            <p class="mailbox" id="r-mailbox" hidden>
+              Votre messagerie ne s’est pas ouverte ? Écrivez à <code id="r-address"></code>
+              <button class="btn btn-ghost" type="button" id="r-copy">Copier l’adresse</button>
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section id="questions">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Questions</p>
+            <h2>Questions fréquentes</h2>
+          </div>
+          <details>
+            <summary>Faut-il internet pour jouer ?</summary>
+            <p>
+              Non. Le PC du MJ et les téléphones se parlent sur le wifi de la maison. Internet ne sert qu’aux mises à jour, à l’assistant IA
+              et au jeu à distance.
+            </p>
+          </details>
+          <details>
+            <summary>Les joueurs doivent-ils installer quelque chose ?</summary>
+            <p>Non : ils scannent le QR code et la table s’ouvre dans le navigateur du téléphone, Android comme iPhone.</p>
+          </details>
+          <details>
+            <summary>Où sont mes campagnes ?</summary>
+            <p>
+              Sur le PC du MJ, et nulle part ailleurs. Aucun compte, aucune donnée envoyée. Une sauvegarde tient dans un seul fichier pour
+              changer de PC.
+            </p>
+          </details>
+          <details>
+            <summary>Quels jeux de rôle ?</summary>
+            <p>
+              La cinquième édition en priorité (règles 2014 et 2024), avec des fiches génériques pour d’autres jeux. Les cartes, le
+              scénario, les scènes et les dés servent à n’importe quel jeu.
+            </p>
+          </details>
+          <details>
+            <summary>Puis-je importer les livres que j’ai achetés ?</summary>
+            <p>
+              Pour votre table, oui : photographiez vos cartes, saisissez vos étapes. Mais ces contenus restent sous droits : ils ne peuvent
+              être ni partagés ni proposés au catalogue.
+            </p>
+          </details>
+          <details>
+            <summary>Quoi de neuf dans la dernière version ?</summary>
+            <ul class="news" id="news">
+              <li>Les règles 2024 en français officiel, le partage des aventures, la photo → carte.</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <div class="links">
+          <a href="#telecharger">Télécharger</a>
+          <a href="#demande">Contact</a>
+          <a href="legal/licence.txt">Licence</a>
+          <a href="legal/confidentialite.txt">Confidentialité</a>
+          <a href="#" id="releases">Toutes les versions</a>
+        </div>
+        <p>
+          JDR Compagnon est un outil indépendant, compatible avec la cinquième édition. Cette œuvre inclut du matériel issu du System
+          Reference Document 5.2.1 (« SRD 5.2.1 ») de Wizards of the Coast LLC, disponible à l’adresse
+          <a href="https://www.dndbeyond.com/srd">https://www.dndbeyond.com/srd</a>. Le SRD 5.2.1 est régi par la Licence Creative Commons
+          Attribution 4.0 International, disponible à l’adresse
+          <a href="https://creativecommons.org/licenses/by/4.0/legalcode">https://creativecommons.org/licenses/by/4.0/legalcode</a>.
+        </p>
+        <p id="copyright"></p>
+      </div>
+    </footer>
+    <script src="site.js"></script>
+  </body>
+</html>
