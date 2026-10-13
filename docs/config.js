@@ -6,8 +6,8 @@ window.JDR_SITE = {
   "repo": "jdr-compagnon",
   "supportEmail": "creusky@hotmail.com",
   "requestUrl": "",
-  "version": "3.6.0",
+  "version": "3.7.0",
   "news": [
-    "Licences : l'éditeur peut désormais offrir ou désactiver une clé Pro depuis son téléphone. Rien ne change pour vous : votre clé reste valable."
+    "Retours à l’éditeur : Réglages › Aide › « Signaler un problème » ou « Proposer une idée ». Les joueurs ont les mêmes boutons dans leurs réglages. « Mes retours » montre où en est chacun (reçu, à l’étude, en cours, résolu) et la réponse de l’éditeur."
   ]
 };

@@ -26,6 +26,14 @@ CE QUI PASSE PAR INTERNET
   table. Google voit l'adresse IP de la connexion. Sans connexion, le signalement attend la
   suivante. Il permet à l'Éditeur de savoir quelles licences sont utilisées et sur combien
   d'installations.
+- Retours (problème, idée), seulement quand vous en écrivez un : le titre et le texte que vous
+  saisissez, qui l'a écrit (MJ ou joueur, jamais son nom), la version, l'édition, le numéro de
+  licence (édition Pro), l'identifiant d'installation tiré au hasard ; si la case « informations
+  techniques » est cochée, le système, l'appareil et les dernières erreurs de l'application (dossiers
+  personnels masqués). Envoyés par l'application du MJ à la feuille de calcul Google de l'Éditeur
+  (via Google Apps Script), puis gardés dans un ticket de son dépôt privé GitHub. L'état de chaque
+  retour et la réponse courte de l'Éditeur sont publiés sur GitHub sous un numéro tiré au hasard,
+  sans le texte du retour, et relus par l'application qui l'a envoyé.
 - Assistant IA (édition Pro, facultatif) : seulement si vous le réglez et seulement quand vous lui
   demandez quelque chose. Vous choisissez le service : Google Gemini (clé avec facturation
   activée ; service réservé aux personnes majeures selon les conditions de Google), un service
