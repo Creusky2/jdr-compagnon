@@ -14,7 +14,8 @@ CE QUI PASSE PAR INTERNET
 - Mises à jour : l'application interroge le dépôt GitHub de l'Éditeur (GitHub, Inc.) au
   démarrage puis toutes les quatre heures. Désactivable : Réglages › Mises à jour.
 - Annonces de l'Éditeur : lecture d'un fichier d'annonces sur GitHub, au démarrage puis toutes les
-  six heures. Il sert aussi à désactiver des clés Pro frauduleuses (cette vérification reste
+  six heures, avec la liste des clés Pro désactivées par l'Éditeur (revocations.json, même dépôt).
+  Ils servent aussi à désactiver des clés Pro frauduleuses (cette vérification reste
   active). Aucune information sur vous ou votre table n'est envoyée ; GitHub voit l'adresse IP de
   la connexion, comme pour toute page web. Affichage des annonces désactivable : Réglages › Aide
   et assistance.
