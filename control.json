@@ -1,7 +1,9 @@
 {
   "announcements": [],
-  "revoked": [],
+  "revoked": [
+    "L9XOYMKT"
+  ],
   "latestVersion": "3.5.1",
   "activationUrl": "https://script.google.com/macros/s/AKfycbxp5IgZARr21yt4Be5abZk1KFFvkHLm0gVtlG1AIFhfKnqaVZSO8hkAlOIFllcSTAY/exec",
-  "signature": "QDTW0mrerx0YTXjh4kGqmlS1L5T5MValyr2DdNA6QkgZdv1pgJt_PD06rn0G5xT9pW5UGR6Ka7xFLIMVtBmvDQ"
+  "signature": "niw5o2FLEF6ws-qCqWNPo1OQn6PFOWmJWZfFs05qiwQ42CtrcyG83kmrpHkjqEmY5Nx7zsVzLE6qNnoych-8AQ"
 }
