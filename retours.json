@@ -1,11 +1,12 @@
 {
   "by": "distance",
-  "seq": 1791905607000,
+  "seq": 1791905621000,
   "items": {
     "0Eoh8s07vbnJ": {
-      "status": "analyse",
-      "reply": "Merci ! Essai réussi, tout le parcours fonctionne."
+      "status": "resolu",
+      "reply": "Merci ! Essai réussi, tout le parcours fonctionne.",
+      "version": "3.7.0"
     }
   },
-  "signature": "lvrdTv1MKiKULgmUM-vAcls4Njjy-nZ28XBugq3x2XKsRHXVPfLBT6D951Cjp75lIgmrEco0ScAIgYZqFUj9AQ"
+  "signature": "AmGYLs37HsLHs8u0CCeJrFCqRb_hp9NNtvD5To7dj4gSJRMAi26RI_FziBd9coD5a3Z-CmgSPsKr6UrFSbWfCA"
 }
