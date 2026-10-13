@@ -1,0 +1,1 @@
+const e="A-Za-zÀ-ÖØ-öø-ÿŒœ",p=new RegExp(`([${e}])'(?=[${e}])`,"g");function r(c){return c.replace(p,"$1’").replace(/« /g,"« ").replace(/ »/g," »").replace(/([^\s  ]) :(?=\s|$)/g,"$1 :").replace(/([^\s  (]) ([;!?])(?=\s|$|»|\))/g,"$1 $2")}export{r as t};
