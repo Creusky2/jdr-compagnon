@@ -6,8 +6,8 @@ window.JDR_SITE = {
   "repo": "jdr-compagnon",
   "supportEmail": "creusky@hotmail.com",
   "requestUrl": "",
-  "version": "3.5.1",
+  "version": "3.5.2",
   "news": [
-    "Activation de l'édition Pro signalée une seule fois à l'éditeur : numéro de licence, version de l'application et un identifiant d'installation tiré au hasard, rien sur vous ni sur votre table (détails dans la politique de confidentialité)."
+    "Sécurité : serveur de la table mis à jour (Fastify et son module de fichiers), qui corrige plusieurs failles connues (chemins piégés, requêtes qui pouvaient bloquer le serveur)."
   ]
 };
