@@ -18,6 +18,13 @@ CE QUI PASSE PAR INTERNET
   active). Aucune information sur vous ou votre table n'est envoyée ; GitHub voit l'adresse IP de
   la connexion, comme pour toute page web. Affichage des annonces désactivable : Réglages › Aide
   et assistance.
+- Activation de l'édition Pro : quand vous activez une licence, l'application le signale une
+  seule fois à l'Éditeur (feuille de calcul Google de l'Éditeur, via Google Apps Script) :
+  numéro de la licence, version de l'application, date, et un identifiant d'installation tiré au
+  hasard (il ne dit rien de vous ni de votre ordinateur). Ni nom, ni adresse, ni contenu de la
+  table. Google voit l'adresse IP de la connexion. Sans connexion, le signalement attend la
+  suivante. Il permet à l'Éditeur de savoir quelles licences sont utilisées et sur combien
+  d'installations.
 - Assistant IA (édition Pro, facultatif) : seulement si vous le réglez et seulement quand vous lui
   demandez quelque chose. Vous choisissez le service : Google Gemini (clé avec facturation
   activée ; service réservé aux personnes majeures selon les conditions de Google), un service
