@@ -6,11 +6,14 @@ window.JDR_SITE = {
   "repo": "jdr-compagnon",
   "supportEmail": "creusky@hotmail.com",
   "requestUrl": "",
-  "version": "3.10.0",
+  "version": "3.11.0",
   "news": [
-    "Rechercher partout : Ctrl+K (ou la loupe) trouve un PNJ, un lieu, une carte, une étape, un monstre, un sort, une règle ou un objet magique, même hors connexion.",
-    "Préparer la prochaine séance : une fiche pré-remplie (héros, ouverture, scènes, secrets et indices à cocher, lieux, PNJ, rencontres) dans le carnet.",
-    "Compte rendu de séance en deux versions : celle des joueurs sans les secrets, relue puis envoyée ; la vôtre, complète, gardée dans le carnet.",
-    "Confidentialité : le résumé « Précédemment… » de l’assistant IA ne voit plus les notes secrètes ni les lignes « MJ seulement » de la chronique."
+    "Couleurs pour daltoniens (Réglages › Affichage) : pions et barres de vie dans des teintes que tous distinguent, PV écrits en chiffres, initiales sur les portraits des pions.",
+    "Ambiance Calme ou Tension : d’un toucher, l’ambiance monte d’un cran (bruits plus rapprochés, bourdon grave).",
+    "Tables aléatoires : « {2d6} » lance les dés, « [[Trésor]] » tire dans une autre de vos tables.",
+    "Les notes épinglées sur la carte se voient aussi en 3D.",
+    "Rechercher partout : un personnage ouvre directement sa fiche.",
+    "Site : le guide complet en ligne, et une feuille de route des idées retenues.",
+    "Correction : un résultat de la recherche ouvre bien son onglet (la fenêtre, en se refermant, annulait le changement d’onglet)."
   ]
 };

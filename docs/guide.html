@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Guide · JDR Compagnon</title>
+    <meta name="description" content="Le guide complet de JDR Compagnon : préparer, jouer, la carte, les joueurs, les réglages." />
+    <meta name="theme-color" content="#0a0812" />
+    <link rel="icon" href="images/favicon-64.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="canonical" href="https://creusky2.github.io/jdr-compagnon/guide.html" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap">
+        <a class="brand" href="./"><img src="images/icon-192.png" alt="" width="34" height="34" /> JDR Compagnon</a>
+        <nav aria-label="Pages">
+          <a href="./">Accueil</a>
+          <a href="guide.html">Guide</a>
+          <a href="nouveautes.html">Nouveautés</a>
+          <a href="confidentialite.html">Confidentialité</a>
+        </nav>
+        <a class="btn btn-gold" href="./#telecharger">Télécharger</a>
+      </div>
+    </header>
+    <main class="doc">
+      <div class="wrap">
+        <p class="eyebrow">Guide</p>
+        <h1>Le guide complet</h1>
+        <p class="lead">Le même guide que dans l’application (bouton « ? »), à lire avant la première partie ou à garder ouvert à côté.</p>
+        <nav class="guide-toc" aria-label="Sommaire"><div><h2>Pour le MJ</h2><ol><li><a href="#bienvenue">Bienvenue</a></li><li><a href="#installer">Installer et démarrer</a></li><li><a href="#connecter">Connecter les téléphones</a></li><li><a href="#preparer">Préparer une campagne</a></li><li><a href="#cartes">Les cartes</a></li><li><a href="#seance">Mener la séance</a></li><li><a href="#securite">Sécurité à la table</a></li><li><a href="#apres">Entre deux séances</a></li><li><a href="#ia">L’assistant IA</a></li><li><a href="#donnees">Données et sauvegardes</a></li><li><a href="#reglages">Réglages de l’appareil</a></li><li><a href="#depannage">Dépannage</a></li><li><a href="#gestes">Gestes et raccourcis</a></li></ol></div><div><h2>Pour les joueurs</h2><ol><li><a href="#j-rejoindre">Rejoindre la table</a></li><li><a href="#j-heros">Votre héros</a></li><li><a href="#j-des">Les dés</a></li><li><a href="#j-carte">Combat et carte</a></li><li><a href="#j-carnet">Carnet et messages</a></li><li><a href="#j-securite">Sécurité et enregistrement</a></li></ol></div></nav>
+        <section class="guide-chapter" id="bienvenue">
+          <h2>Bienvenue</h2>
+          <article>
+            <h3>Ce que fait JDR Compagnon</h3>
+            <p>JDR Compagnon anime une partie de jeu de rôle autour d’une vraie table. Le <strong>MJ</strong> a l’écran principal (une tablette ou un PC) ; chaque <strong>joueur</strong> rejoint avec son téléphone, sur le même wifi, sans compte ni installation. Le PC du MJ fait office de serveur : rien ne part sur internet, sauf ce que vous choisissez (assistant IA, mises à jour, copie dans le nuage).</p>
+            <ul><li>Dés partagés, fiches de personnage, grimoire, inventaire.</li><li>Combat : initiative, points de vie, états, jets demandés.</li><li>Cartes 2D et 3D, brouillard, vision, murs et portes, vue à la première personne.</li><li>Scénario étape par étape, scènes illustrées, ambiances et musiques.</li><li>Carnet de campagne, chronique, calendrier, agenda des séances.</li></ul>
+          </article>
+          <article>
+            <h3>L’écran du MJ en bref</h3>
+            <p>Tout part de l’<strong>Accueil</strong> : « Préparer » liste dans l’ordre ce qu’il faut avant la soirée (chaque point se coche seul et mène au bon écran) ; « Jouer » ouvre la <strong>Table</strong>, l’écran unique de la partie (histoire, carte ou combat, héros, dés).</p>
+            <p>En <strong>mode simple</strong> (par défaut), la barre de gauche ne montre que l’essentiel ; le reste est rangé sous « <strong>Plus</strong> ». Le <strong>mode expert</strong> (Accueil ou Réglages) affiche tous les onglets.</p>
+            <p>Le bouton <strong>?</strong> de chaque écran explique cet écran, donne les règles (glossaire) et ce guide.</p>
+          </article>
+          <article>
+            <h3>Pour bien commencer</h3>
+            <ul><li><strong>Accueil › Découvrir › Tutoriel guidé</strong> : une vraie petite séance en vingt minutes, avec un téléphone d’essai affiché dans l’écran du MJ. La meilleure façon d’apprendre.</li><li><strong>Visite rapide</strong> : une minute pour savoir où est chaque chose.</li><li><strong>Partie de démonstration</strong> : « La Crypte du Roi-Corbeau », prête à jouer, dans une campagne à part.</li></ul>
+          </article>
+        </section>
+        <section class="guide-chapter" id="installer">
+          <h2>Installer et démarrer</h2>
+          <article>
+            <h3>Installation</h3>
+            <p>Lancez « JDR-Compagnon-Setup-x.y.z.exe ». Si Windows affiche SmartScreen : <strong>Informations complémentaires</strong> › <strong>Exécuter quand même</strong>. Les versions suivantes s’installent seules (Réglages › Aide › Mises à jour : automatique, canal stable ou bêta). La version « portable » ne se met pas à jour seule.</p>
+          </article>
+          <article>
+            <h3>Pare-feu de Windows</h3>
+            <p>Au premier démarrage, autorisez l’accès réseau (réseaux <strong>privés</strong>). Si l’Accueil signale que <strong>le pare-feu bloque les téléphones</strong>, touchez <strong>Autoriser les téléphones</strong> : Windows demande une confirmation. Un antivirus avec son propre pare-feu peut aussi bloquer : l’application le signale dans Réglages › Aide.</p>
+          </article>
+          <article>
+            <h3>Édition gratuite et édition Pro</h3>
+            <p>L’édition gratuite contient toute la table. L’<strong>édition Pro</strong> ajoute la vue 3D (et la vue à la première personne), la bibliothèque d’aventures (la démonstration reste gratuite), l’assistant IA, le résumé audio et le jeu à distance. Collez votre clé (elle commence par « JDR1- »), ou le message d’invitation entier, dans Réglages › Table › Édition Pro : le nom de la clé s’affiche, puis toute la table passe en Pro, téléphones compris. Une invitation reçue avec un bouton « Activer dans JDR Compagnon » fait tout d’un clic : l’application s’ouvre et demande confirmation. L’activation est signalée une seule fois à l’éditeur (numéro de licence, version, identifiant d’installation tiré au hasard), rien sur vous ni sur votre table.</p>
+          </article>
+          <article>
+            <h3>Où sont vos données</h3>
+            <p>Dans « %APPDATA%\JDR Compagnon\data », une campagne par dossier. Une copie de sécurité est faite chaque jour ; voir le chapitre « Données et sauvegardes ».</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="connecter">
+          <h2>Connecter les téléphones</h2>
+          <article>
+            <h3>Le QR code</h3>
+            <p>Onglet <strong>Joueurs</strong> : chaque joueur scanne le QR code avec l’appareil photo de son téléphone, entre son prénom et arrive à la table. Le QR affiche le <strong>nom du wifi</strong> à rejoindre : le téléphone doit être sur le même réseau que le PC du MJ.</p>
+            <p>Sous le QR, le <strong>bilan réseau</strong> dit ce qui pourrait gêner (VPN actif, réseau marqué « public », pare-feu). <strong>Essai avec un téléphone</strong> confirme qu’un vrai téléphone a bien atteint la table.</p>
+            <p>Sur un <strong>wifi public</strong> (hôtel, école, bar, médiathèque), cochez <strong>Code de la table aussi sur le wifi</strong> : un inconnu du même réseau ne peut plus rejoindre la table. Le QR code contient le code, les joueurs qui le scannent n’ont rien à taper ; les autres le saisissent sur l’écran d’accueil.</p>
+          </article>
+          <article>
+            <h3>Si ça ne passe pas</h3>
+            <ul><li>Vérifiez que le téléphone est sur le <strong>même wifi</strong> (pas en 4G, pas sur le wifi « invités » de la box).</li><li>Coupez le <strong>VPN</strong> du PC (NordVPN et autres détournent le réseau local).</li><li>Marquez le wifi du PC en réseau <strong>privé</strong> dans les paramètres de Windows.</li><li><strong>Plan B</strong> : le point d’accès mobile de Windows. Le PC crée son propre wifi, les téléphones s’y connectent ; l’onglet Joueurs ouvre directement le bon réglage.</li><li>L’adresse a changé (autre box, autre jour) : les joueurs rescannent le QR code. L’application prévient le MJ.</li></ul>
+          </article>
+          <article>
+            <h3>Garder les téléphones allumés</h3>
+            <p>La page des joueurs empêche l’écran de se mettre en veille pendant la partie (réglage par appareil). Un téléphone réveillé se reconnecte seul, et ce qu’il a fait pendant la coupure part au retour.</p>
+          </article>
+          <article>
+            <h3>Jouer à distance (Pro)</h3>
+            <p>Onglet Joueurs › Jouer à distance passe par Tailscale : les joueurs éloignés reçoivent une adresse et un <strong>code de table</strong>. Le MJ garde la main : le code se change à tout moment.</p>
+          </article>
+          <article>
+            <h3>Le carnet du MJ : préparer sur son téléphone, sans PC</h3>
+            <p>Sur le site de JDR Compagnon, <strong>Ouvrir le carnet</strong> : l’écran du MJ s’ouvre sur votre téléphone et tout ce que vous y préparez (aventures, cartes, scènes, PNJ, rencontres, notes) reste dans le téléphone, même sans réseau. Ajoutez-le à l’écran d’accueil pour l’avoir sous la main.</p>
+            <ul><li><strong>Envoyer au PC</strong> (accueil du carnet) : un fichier .jdr, partagé ou enregistré dans les téléchargements. Sur le PC, glissez-le sur la fenêtre : ce que la campagne a déjà est <strong>mis à jour</strong>, sans doublon, et rien de ce qui a été joué n’est effacé (brouillard découvert, pions des joueurs, étapes jouées).</li><li><strong>Ouvrir un fichier du PC</strong> : sur le PC, Scénario › <strong>Partager</strong> crée le fichier ; ouvert dans le carnet, il met à jour ce que le carnet a déjà.</li><li>Le carnet ne fait pas venir les joueurs, ni l’assistant IA, ni la bibliothèque : tout cela passe par le PC.</li></ul>
+          </article>
+          <article>
+            <h3>Second écran du MJ et écran de table</h3>
+            <ul><li>Un <strong>second écran MJ</strong> (un autre appareil) entre avec le <strong>code MJ</strong>, affiché masqué dans l’onglet Joueurs.</li><li>L’<strong>écran de table</strong> (bouton écran en haut à droite) montre aux joueurs la carte avec le brouillard, l’ordre du combat, les scènes et les documents remis à tous. Sur la Surface, il s’ouvre en plein écran sur la télé ou le projecteur branché. Ailleurs, ouvrez « /tv » dans le navigateur de la télé. Ses réglages proposent l’<strong>échelle réelle</strong> : une case = 2,5 cm sur une télé posée à plat, pour y poser des figurines. Pour qu’elle tombe juste, <strong>mesurez-la une fois avec une carte bancaire</strong> posée sur l’écran : la mesure est gardée par la télé, sur toutes les cartes. Le <strong>mode figurines</strong> empêche la carte de bouger quand on pose une figurine ou une main sur l’écran.</li></ul>
+          </article>
+        </section>
+        <section class="guide-chapter" id="preparer">
+          <h2>Préparer une campagne</h2>
+          <article>
+            <h3>Campagnes et règles</h3>
+            <p><strong>Réglages › Table</strong> : une campagne par groupe de joueurs (personnages, cartes, carnet, calendrier). La médiathèque et le contenu maison sont communs. On y règle aussi les <strong>règles</strong> (5e 2014 ou 2024, ou un autre système avec des fiches génériques) et les <strong>vrais dés</strong>.</p>
+            <p>Chaque campagne s’<strong>exporte</strong> (bouton de téléchargement) pour la confier à un autre MJ, et <strong>Importer une campagne</strong> en ajoute une nouvelle sans toucher à la vôtre.</p>
+          </article>
+          <article>
+            <h3>Une aventure toute prête</h3>
+            <p><strong>Accueil › Découvrir › Bibliothèque d’aventures</strong> : des aventures complètes et originales avec livret du MJ, scènes illustrées, cartes construites, PNJ, rencontres, documents et héros prétirés. <strong>Lire le livret</strong> d’abord ; <strong>Jouer</strong> l’installe dans une nouvelle campagne, <strong>Ajouter ici</strong> dans la campagne en cours.</p>
+          </article>
+          <article>
+            <h3>Le scénario</h3>
+            <p>Onglet <strong>Scénario</strong> : des <strong>chapitres</strong> découpés en <strong>étapes</strong>. Pour chaque étape :</p>
+            <ul><li>le <strong>texte à lire</strong> aux joueurs, et les <strong>notes du MJ</strong> (secrets, jets à demander) ;</li><li>ce qui se <strong>déclenche</strong> en la jouant : scène, carte, rencontre, document, ambiance, musique, bruitage ;</li><li>des <strong>embranchements</strong> (« Ils suivent la piste » → telle étape).</li></ul>
+            <p>En mode <strong>Préparer</strong>, glissez la poignée ⋮⋮ pour réordonner. <strong>Partager</strong>, <strong>Exporter</strong>, <strong>Importer</strong> et <strong>Imprimer</strong> sont sous la liste des étapes. L’assistant IA peut rédiger une étape ou toute une aventure. Sur téléphone, le haut tient sur une rangée : l’aventure, <strong>Jouer</strong> / <strong>Préparer</strong>, et « ⋯ » pour une nouvelle aventure, la bibliothèque ou le livret du MJ ; l’ambiance et le bruitage d’une étape se choisissent dans deux listes.</p>
+          </article>
+          <article>
+            <h3>Scènes et sons</h3>
+            <p><strong>Scènes</strong> : une illustration, un titre, une ambiance et une musique, révélées d’un toucher sur tous les écrans. Toucher l’image d’une scène l’affiche <strong>en grand sur votre écran seulement</strong> : pratique pour la montrer depuis votre téléphone sans l’envoyer aux joueurs. <strong>Sons</strong> : ambiances (taverne, forêt, orage…), musiques importées et bruitages. <strong>Calme</strong> ou <strong>Tension</strong> (Immersion › Ambiances) : en tension, l’ambiance monte d’un cran, ses bruits se rapprochent et un bourdon grave s’y glisse ; pour le combat, l’ambiance Bataille. Le son des téléphones démarre après un premier toucher (règle des navigateurs).</p>
+          </article>
+          <article>
+            <h3>Le carnet de campagne</h3>
+            <p><strong>Campagne</strong> (sous « Plus » en mode simple) › <strong>Carnet</strong> : PNJ, lieux, quêtes, objets, savoir, séances. Une fiche peut être <strong>partagée</strong> aux joueurs. <strong>Documents</strong> : lettres, inscriptions, cartes au trésor à remettre à un joueur ou à tous (ils les retrouvent dans leur Carnet). <strong>Calendrier</strong> (mode expert) : date et heure du monde. <strong>Chronique</strong> : tout ce qui s’est passé, noté au fil de la partie ; <strong>Copier la chronique</strong> la met en texte pour un message WhatsApp ou Discord (joueurs absents), sans les lignes marquées « MJ seulement » (quête non partagée, document remis à un autre, combattant caché).</p>
+          </article>
+          <article>
+            <h3>Rechercher partout</h3>
+            <p><strong>Ctrl+K</strong> (ou la loupe en haut de l’écran) : une seule barre pour le carnet (PNJ, lieux, quêtes, séances), les personnages, les cartes, les aventures et leurs étapes, les scènes, et tout le SRD : monstres, sorts, règles, objets magiques. Une fiche du carnet, une fiche de personnage, une carte ou une aventure s’ouvre à sa place ; un sort, une règle ou un objet se lit dans la fenêtre ; un monstre ouvre son profil. Flèches et Entrée au clavier.</p>
+          </article>
+          <article>
+            <h3>Préparer la prochaine séance</h3>
+            <p><strong>Préparer la prochaine séance</strong> (Accueil, ou Campagne › Séance) crée dans le carnet une fiche « Séance N : préparation », à la façon du « MJ paresseux » : les héros, une ouverture forte, les scènes possibles (étapes pas encore jouées de l’aventure), dix <strong>secrets et indices</strong>, les lieux et PNJ du carnet en liens, les rencontres prêtes, un trésor. Complétez-la ; pendant la partie, <strong>cochez</strong> un secret quand il est révélé, d’un toucher.</p>
+          </article>
+          <article>
+            <h3>Compte rendu de séance</h3>
+            <p>Campagne › Séance › <strong>Compte rendu</strong> : un brouillon tiré de la chronique de la séance et de ses moments forts, en deux versions. <strong>Pour les joueurs</strong> : sans les lignes « MJ seulement » ; relisez-la, ajoutez votre touche, puis <strong>Envoyer aux joueurs</strong> (ils la retrouvent dans leurs documents). <strong>Pour vous</strong> : complète, les secrets marqués [MJ] ; <strong>Garder dans le carnet</strong> la range dans les séances.</p>
+          </article>
+          <article>
+            <h3>Rencontres et tables</h3>
+            <p><strong>Outils › Rencontres</strong> : composez une rencontre avec le bestiaire, la difficulté se calcule selon le groupe ; « Lancer le combat » pose tout d’un coup. <strong>Outils › Tables</strong> : vos tables aléatoires (rumeurs, rencontres de la forêt…). Dans une entrée, <strong>{2d6}</strong> est remplacé par un jet (« {1d4+1} loups ») et <strong>[[Trésor]]</strong> par une entrée tirée dans votre table « Trésor » ; « 3 × … » rend une entrée trois fois plus probable. <strong>CSV</strong> importe un tableur : une colonne = une table, la première ligne donne les noms.</p>
+          </article>
+          <article>
+            <h3>Règles officielles (SRD 5.2.1 en français)</h3>
+            <p>L’application reprend le <strong>texte officiel français du SRD 5.2.1</strong>, les règles 2024 publiées librement par l’éditeur du jeu :</p>
+            <ul><li><strong>Bestiaire</strong> (Campagne › Bestiaire) : 330 profils 2024, avec initiative, actions bonus et équipement ; les boutons lancent attaques, dégâts et sauvegardes.</li><li><strong>Grimoire</strong> : 339 sorts, avec leurs dés selon le niveau d’emplacement ou de personnage, leur sauvegarde et leur zone.</li><li><strong>Inventaire et butin</strong> : armes, armures, matériel, outils, et les <strong>258 objets magiques</strong> (rareté et harmonisation notées).</li><li><strong>Aide › Règles</strong> : « L’essentiel » (résumés pour la table) ou le <strong>glossaire officiel</strong> (états, actions, dangers, zones…).</li></ul>
+            <p>Les rencontres et pions créés avant cette version retrouvent seuls leur monstre : un « Gobelin » devient le « Combattant gobelin » de 2024.</p>
+          </article>
+          <article>
+            <h3>Photo d’un plateau ou d’un dessin</h3>
+            <p><strong>Carte › bouton appareil photo</strong> (ou Immersion › Scènes › Photo) : photographiez un plan dessiné, un plateau quadrillé ou une carte imprimée, à plat, bien éclairé, la feuille entière dans l’image.</p>
+            <ul><li>La feuille est trouvée toute seule ; ajustez les <strong>quatre coins</strong> au doigt si besoin.</li><li><strong>Dessin sur papier</strong> blanchit le papier et renforce les traits ; <strong>Plateau</strong> équilibre les couleurs ; <strong>Telle quelle</strong> ne touche à rien.</li><li>Les <strong>cases</strong> sont comptées dans la grille du papier (l’image est recadrée sur son premier trait et ses cases remises au carré ; corrigez le nombre si besoin) et des <strong>murs</strong> sont proposés sur les traits du dessin.</li><li>Tout se fait sur l’appareil ; seule l’image finale rejoint la médiathèque. Sur un téléphone, l’appareil photo s’ouvre directement.</li></ul>
+          </article>
+          <article>
+            <h3>Du dessin au plateau 3D : la légende et l’assistant</h3>
+            <p>Dessinez votre plan sur papier quadrillé avec une <strong>légende simple</strong>, et la carte se monte toute seule, en 2D comme en 3D :</p>
+            <ul><li><strong>porte</strong> : un petit rectangle à cheval sur le mur (un simple trou dans le mur reste un passage ouvert) ;</li><li><strong>eau</strong> : des hachures (une zone hachurée qui touche le bord de la feuille est la roche autour du plan, pas de l’eau) ;</li><li><strong>piège</strong> : un X dans la case (il devient un piège caché, découvert par la Perception des héros) ;</li><li><strong>pilier</strong> : un cercle dans la case.</li></ul>
+            <p>La légende se lit sur l’appareil, sans internet. <strong>Compléter avec l’IA</strong> (édition Pro, assistant réglé) envoie la photo redressée à l’assistant : il ajoute ce que la légende ne sait pas voir (tables, lits, coffres, escaliers, autels, arbres, lave…), posés en vrais décors sur leurs cases ; la légende l’emporte s’ils ne sont pas d’accord.</p>
+            <p>Avant de créer la carte, l’aperçu montre tout : murs en rouge, légende en or, assistant en violet. <strong>Touchez</strong> ce qui est faux pour le retirer (« Tout remettre » le rend). Tout reste modifiable ensuite avec les outils de construction.</p>
+          </article>
+          <article>
+            <h3>Partager et importer</h3>
+            <p><strong>Partager</strong> (Scénario › Partager, ou Réglages › Données) : un fichier <strong>.jdr</strong> avec les aventures et cartes choisies et tout ce qu’elles utilisent (scènes, cartes reliées par un passage, rencontres, PNJ, images, sons, monstres maison). Rien de votre table n’y entre : ni joueurs, ni jets, ni brouillard découvert. Envoyez-le à un autre MJ, ou choisissez « <strong>Proposer au catalogue</strong> » : l’éditeur le relit avant de l’ouvrir à tous.</p>
+            <p><strong>Importer</strong> : glissez des fichiers ou des <strong>dossiers entiers</strong> sur la fenêtre, ou Réglages › Données › Importer des fichiers. Chaque fichier est reconnu : partages .jdr (dans la campagne en cours ou une nouvelle), campagnes .zip, aventures, fiches (PDF ou fichier), cartes Universal VTT, contenu maison 5etools ou Open5e, tables CSV, images (médiathèque ou une carte chacune), sons et figurines .glb.</p>
+          </article>
+          <article>
+            <h3>Contenu maison</h3>
+            <p><strong>Campagne › Maison</strong> : vos <strong>monstres</strong> et vos <strong>sorts</strong>, saisis à la main ou importés d’un fichier <strong>5etools</strong> (homebrew), d’un export <strong>Open5e</strong> ou d’un autre MJ. Ils rejoignent le bestiaire, les rencontres et le grimoire de toutes vos campagnes. Les joueurs voient les sorts, jamais les monstres.</p>
+            <p>Dans un monstre, écrivez une capacité par ligne : « Griffes. Attaque au corps à corps : +5 au toucher… Touché : 7 (2d4 + 2) tranchant. » Le bonus et les dégâts sont lus pour les boutons de jet.</p>
+            <p>La <strong>vitesse</strong> se saisit en mètres (9 pour une créature ordinaire).</p>
+            <p>Le <strong>catalogue de la communauté</strong>, en dessous, propose des contenus partagés par d’autres MJ et relus par l’éditeur.</p>
+          </article>
+          <article>
+            <h3>PNJ et héros prétirés</h3>
+            <p><strong>Joueurs › Personnages et PNJ</strong> : une fiche sans joueur est soit un <strong>PNJ</strong> (bouton « PNJ » : il reste au MJ), soit un <strong>héros prétiré libre</strong> que les joueurs voient et peuvent prendre. Ouvrez la fiche et réglez « Proposé aux joueurs » pour passer de l’un à l’autre. Un joueur qui ne veut plus d’un prétiré le <strong>rend au MJ</strong> : la fiche n’est jamais effacée.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="cartes">
+          <h2>Les cartes</h2>
+          <article>
+            <h3>Avoir une carte</h3>
+            <ul><li><strong>Importer</strong> une image, puis régler la grille (Réglages de la carte).</li><li><strong>Importer une carte Universal VTT</strong> (Dungeondraft, Dungeon Alchemist) : murs, portes et lumières arrivent avec.</li><li><strong>Générer</strong> (bouton +) : donjon, caverne, forêt, village, auberge, temple ; avec l’assistant IA, décrivez la carte en une phrase.</li><li><strong>Construire</strong> (bouton +, puis mode Construire) : sol, relief, murs, portes, décors, lumières. L’outil <strong>Copier</strong> choisit une zone pour la copier, la coller (même sur une autre carte) ou y poser un modèle prêt.</li></ul>
+          </article>
+          <article>
+            <h3>Détecter les murs sur une image</h3>
+            <p>Pour une image importée : <strong>Réglages de la carte › Détecter les murs sur l’image</strong>. Les bords de cases qui passent sur un trait sombre deviennent des murs. Réglez la grille d’abord, ajustez la sensibilité en regardant l’aperçu rouge, puis <strong>Ajouter les murs</strong>. Posez ensuite les portes avec l’outil Murs ; <strong>Annuler</strong> retire tout d’un coup.</p>
+          </article>
+          <article>
+            <h3>Jouer sur la carte</h3>
+            <p>Mode <strong>Jouer</strong> : <strong>Déplacer</strong> (un doigt sur un pion le déplace, sur le vide la vue ; deux doigts zooment), <strong>Mesurer</strong>, <strong>Dessiner</strong>, <strong>Zone</strong> (gabarits de sorts), <strong>Dévoiler</strong> et <strong>Masquer</strong> (brouillard). <strong>Montrer aux joueurs</strong> affiche la carte sur leurs téléphones ; <strong>Cacher aux joueurs</strong> la retire.</p>
+            <p><strong>Notes</strong> : touchez la carte pour y épingler une note, pour vous seul (« piège sous la dalle ») ou visible des joueurs (« la porte est barrée de l’intérieur ») ; touchez une note pour la modifier ou la retirer. Les joueurs touchent une note partagée pour la lire. Les notes se voient aussi en 3D ; « i » doré : vue des joueurs, « ✱ » violet : vous seul.</p>
+          </article>
+          <article>
+            <h3>La carte sur un téléphone, et en plein écran</h3>
+            <p>Sur un téléphone, la carte prend presque tout l’écran ; une barre en dessous rassemble les commandes :</p>
+            <ul><li><strong>Carte</strong> : la liste des cartes (point doré : celle que voient les joueurs), <strong>Montrer</strong> ou <strong>Cacher aux joueurs</strong>, importer, créer, photo, recadrer, réglages.</li><li><strong>Outil</strong> : tous les outils en une fenêtre, ceux du jeu puis ceux de la construction.</li><li><strong>Options</strong> : les choix de l’outil en cours (genre de mur, couleur, taille…), repliables.</li><li><strong>3D</strong> et <strong>Plein écran</strong> : l’en-tête et les onglets s’effacent ; <strong>Réduire</strong> les rend.</li></ul>
+            <p>Sur tablette, le bouton plein écran est au bout de la seconde barre. Les joueurs ont la même barre sous leur carte (outil, mon pion, tout voir, 3D, plein écran).</p>
+            <p><strong>Téléphone tourné</strong> : la carte passe d’elle-même en plein écran, la barre se range à droite ; <strong>Réduire</strong> rend l’en-tête, et le retour en portrait aussi. Sur les autres écrans, les onglets passent sur le côté (menu à gauche, avec leurs noms) pour laisser la hauteur au contenu.</p>
+            <p><strong>En 3D au doigt</strong>, comme une carte routière : un doigt fait glisser la carte, deux doigts zooment et tournent, deux doigts glissés ensemble vers le haut ou le bas inclinent la vue. Vue tournée, une <strong>boussole</strong> apparaît : touchez-la pour remettre le nord en haut. Sur téléphone, le bouton <strong>Vue</strong> (la caméra, en bas à droite) rassemble vue subjective, vue de dessus, suivre le tour et murs bas.</p>
+          </article>
+          <article>
+            <h3>Brouillard, vision et lumières</h3>
+            <p>Le <strong>brouillard</strong> cache ce que les joueurs n’ont pas exploré. Avec la <strong>vision automatique</strong> (Réglages de la carte), chaque héros voit selon les murs, les portes et les décors opaques, la lumière et sa vision dans le noir ; ce qu’il a déjà vu reste dans la pénombre. L’<strong>obscurité</strong> et la <strong>lumière du jour</strong> (qui suit l’heure du calendrier) se règlent par carte.</p>
+            <p>Un pion qui n’appartient pas à un joueur et se trouve encore dans l’inconnu n’est <strong>pas envoyé</strong> aux téléphones : il apparaît quand la zone est dévoilée. Les joueurs ne voient ni la CA ni les PV des monstres.</p>
+          </article>
+          <article>
+            <h3>Objets cachés, pièges et portes secrètes</h3>
+            <p>Un décor peut cacher un trésor, un indice ou un piège ; un mur peut être une porte secrète (DD de 8 à 20). Les héros les remarquent avec leur Perception passive en passant à côté, ou en <strong>fouillant</strong> depuis leur téléphone. Les pièges demandent un jet de sauvegarde ; les joueurs peuvent tenter de les <strong>désamorcer</strong>.</p>
+          </article>
+          <article>
+            <h3>Passages entre cartes</h3>
+            <p>Un escalier, une porte ou un portail peut mener à une autre carte (ou ailleurs sur la même : téléporteur). Le passage d’en face se crée seul. Selon le réglage, les joueurs l’empruntent librement, avec votre accord, ou seulement quand vous les y envoyez. Le groupe peut se séparer sur plusieurs cartes.</p>
+          </article>
+          <article>
+            <h3>La vue 3D (Pro)</h3>
+            <p>Le bouton <strong>3D</strong> pose la carte sur une table : relief, murs, décors, figurines, météo, lumière du soleil. Un doigt tourne autour, deux doigts zooment et déplacent. Les boutons de droite : rapprocher, éloigner, tourner, vue de dessus, <strong>suivre le tour</strong> (la vue va au combattant qui joue), <strong>murs bas</strong> (voir dans les pièces).</p>
+          </article>
+          <article>
+            <h3>La vue subjective, à la première personne (Pro)</h3>
+            <p>En 3D, le bouton <strong>Vue subjective</strong> (l’œil, en haut des boutons de droite) fait voir la scène par les yeux d’un pion. Le MJ choisit <strong>n’importe quel pion</strong> (héros, PNJ, monstre), même caché ; un joueur prend le regard de son héros.</p>
+            <ul><li><strong>Glissez</strong> pour regarder autour ; <strong>touchez le sol</strong> pour y aller, <strong>touchez une porte</strong> pour l’ouvrir ou la fermer.</li><li>Les flèches en bas avancent, reculent et tournent d’un huitième de tour ; au clavier : flèches ou ZQSD.</li><li>Les murs, les portes fermées et les cases occupées arrêtent le pas.</li><li><strong>Voir comme lui</strong> (MJ, carte avec vision automatique) : seulement ce que ce pion voit, dans le noir comme en plein jour ; un monstre du bestiaire garde sa vision dans le noir. Décochez-le pour tout voir depuis sa place.</li></ul>
+            <p>Idéal pour une révélation (« vous poussez la porte… ») ou pour montrer ce que voit le monstre tapi dans l’ombre.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="seance">
+          <h2>Mener la séance</h2>
+          <article>
+            <h3>La Table</h3>
+            <p><strong>Table</strong> réunit tout : l’étape du scénario à lire (<strong>Jouer l’étape</strong> déclenche scène, carte, son et rencontre), la carte ou le combat, les héros et les dés. Un toucher sur un héros ouvre sa fiche.</p>
+          </article>
+          <article>
+            <h3>Le combat</h3>
+            <p><strong>Lancer le combat</strong> (depuis une étape, une rencontre ou l’onglet Combat) ajoute les monstres, les héros présents, place les pions et lance l’initiative. Le <strong>bandeau du tour</strong> sur la carte montre qui joue ; <strong>Suivant</strong> passe la main. Sur son téléphone, un joueur touche <strong>Fin de mon tour</strong>.</p>
+            <p><strong>Points de vie</strong> : touchez les PV d’un combattant (ou de plusieurs) et entrez les dégâts ou les soins (sur téléphone, un combattant tient sur une ligne : la toucher ouvre ses PV, avec son profil et « Modifier ») ; <strong>moitié</strong> pour une sauvegarde réussie. Les PV temporaires partent d’abord ; un héros à 0 PV fait ses jets contre la mort. Les <strong>états</strong> (à terre, empoisonné…) se posent d’un toucher, avec leur durée.</p>
+            <p><strong>Tour des monstres</strong> : leurs attaques et sauvegardes prêtes à lancer. À la fin du combat, les <strong>XP</strong> se partagent d’un toucher.</p>
+            <p><strong>Ce que voient les joueurs</strong> : jamais les PV ni la CA d’un monstre, mais son état (indemne, blessé, en sang, hors de combat) ; à couper dans Réglages › Table. <strong>Nom masqué</strong> (en ajoutant un monstre, ou « Modifier ») : les joueurs, l’écran de table et le pion affichent « Créature inconnue » jusqu’à ce que vous dévoiliez son nom.</p>
+            <p><strong>Ambiance et bilan</strong> : si une ambiance joue, elle passe au combat quand il commence et revient à la fin. À la fin, toute la table voit le <strong>bilan</strong> : rounds, adversaires vaincus, coups critiques, dégâts lancés et chutes de chaque héros.</p>
+          </article>
+          <article>
+            <h3>Demander un jet</h3>
+            <p><strong>Demander un jet</strong> : choisissez la caractéristique ou la compétence, le DD (caché ou non), et qui doit lancer. Les téléphones affichent la demande ; les résultats arrivent chez le MJ. Avec un <strong>effet</strong> (piège, souffle), les dégâts se lancent une fois et s’appliquent selon chaque résultat.</p>
+          </article>
+          <article>
+            <h3>Vrais dés</h3>
+            <p>Réglages › Table › <strong>Vrais dés</strong> : « Les joueurs » ou « Tout le monde ». Chacun lance ses propres dés et tape la valeur de chaque dé ; l’application fait les calculs et le note « dé physique ».</p>
+          </article>
+          <article>
+            <h3>Parler aux joueurs</h3>
+            <p><strong>Messages</strong> : à tous ou à un joueur en privé (une révélation, une image). Les joueurs peuvent <strong>chuchoter</strong> au MJ et envoyer des <strong>réactions</strong> rapides. Les <strong>documents</strong> remis restent dans leur Carnet.</p>
+          </article>
+          <article>
+            <h3>Annuler</h3>
+            <p>Le bouton <strong>Annuler</strong> de l’en-tête défait la dernière action du MJ (PV, déplacement, mur…). Les actions répétées sont regroupées.</p>
+          </article>
+          <article>
+            <h3>Fin de séance</h3>
+            <p><strong>Campagne › Séance</strong> montre le <strong>bilan</strong> (héros de la séance, 20 naturels, dégâts, chutes, monstres vaincus) : <strong>Envoyer le bilan</strong> le montre aux joueurs, <strong>Nouvelle séance</strong> l’inscrit à la chronique et remet les compteurs à zéro.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="securite">
+          <h2>Sécurité à la table</h2>
+          <article>
+            <h3>Séance zéro, lignes et voiles</h3>
+            <p>Avant la première partie, convenez ensemble de ce qui ne doit <strong>jamais</strong> arriver dans le jeu (<strong>lignes</strong>) et de ce qui se passe <strong>hors champ</strong> (<strong>voiles</strong>). Notez-les dans <strong>Campagne › Séance › Sécurité à la table</strong> : les joueurs les voient sur leur téléphone (bouton bouclier) et peuvent en proposer d’autres <strong>anonymement</strong>.</p>
+          </article>
+          <article>
+            <h3>Carte X et pause</h3>
+            <p>À tout moment, un joueur touche <strong>Carte X</strong> ou <strong>Pause</strong> sur son téléphone. Un bandeau s’affiche sur tous les écrans, <strong>sans nom</strong>. Avec la carte X, on retire l’élément gênant et on passe à autre chose, sans demander pourquoi.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="apres">
+          <h2>Entre deux séances</h2>
+          <article>
+            <h3>Agenda et sondage de dates</h3>
+            <p><strong>Campagne › Séance › Prochaine séance</strong> : fixez la date, le lieu et un mot aux joueurs. Ils la voient dans leur Carnet et l’ajoutent à leur agenda (fichier .ics, rappel la veille). Pas encore de date ? Le <strong>sondage</strong> propose plusieurs dates ; chaque joueur coche celles qui lui vont ; touchez la meilleure pour la retenir.</p>
+          </article>
+          <article>
+            <h3>Résumé « Précédemment… »</h3>
+            <p>L’assistant IA (Pro) tire de la chronique un résumé à lire au début de la séance suivante (Outils › Assistant › Précédemment…). Il ne voit ni vos notes secrètes ni les lignes « MJ seulement » : le résumé peut être lu aux joueurs.</p>
+            <p>Le <strong>résumé à partir de l’audio</strong> (Campagne › Séance) va plus loin :</p>
+            <ul><li>le micro du PC enregistre la séance, seulement après l’<strong>accord de chaque joueur</strong> connecté, donné sur son téléphone ;</li><li>un voyant rouge reste allumé chez tous, et un refus arrête tout ;</li><li>à la fin, <strong>Résumer la séance</strong> transcrit l’audio, puis écrit le résumé ; l’audio est effacé aussitôt.</li></ul>
+            <p>Avec des mineurs, demandez aussi l’accord de leurs parents.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="ia">
+          <h2>L’assistant IA</h2>
+          <article>
+            <h3>Ce qu’il fait (Pro)</h3>
+            <p><strong>Outils › Assistant</strong> : résumé « Précédemment… », PNJ prêts à jouer, descriptions à lire, questions de règles (avec les extraits du SRD cités et un indice de certitude), demandes libres. Il rédige aussi des étapes, des aventures entières et des cartes à partir d’une description. Les textes produits portent l’étiquette <strong>IA</strong> : relisez-les avant de les lire à la table.</p>
+          </article>
+          <article>
+            <h3>Choisir le service</h3>
+            <ul><li><strong>Google Gemini</strong> : créez une clé sur Google AI Studio et <strong>activez la facturation</strong> du projet. Les conditions de Google réservent l’offre gratuite aux usages hors des applications proposées en Europe, et ses quotas sont très bas. En général, une séance ne coûte que quelques centimes.</li><li><strong>Autre service</strong> compatible OpenAI : OpenAI, Mistral avec votre clé, ou un modèle <strong>sur ce PC</strong> avec <strong>Ollama</strong> ou <strong>LM Studio</strong> (gratuit, rien ne sort de la maison, il faut un PC assez puissant).</li></ul>
+            <p>Dès qu’<strong>Ollama</strong> ou <strong>LM Studio</strong> tourne sur le PC, l’assistant le propose d’un toucher. <strong>Tester la connexion</strong> vérifie le réglage en quelques secondes. En haut de l’assistant, le <strong>compteur du mois</strong> donne le nombre de demandes et un coût estimé (gratuit pour un modèle sur ce PC).</p>
+            <p>La clé reste sur le PC du MJ, chiffrée, et n’est jamais envoyée aux joueurs.</p>
+          </article>
+          <article>
+            <h3>Installer Ollama (modèle local)</h3>
+            <p>1. Téléchargez Ollama sur ollama.com et installez-le.<br />2. Dans un terminal : « ollama pull mistral-small » (ou un autre modèle qui parle bien français).<br />3. Outils › Assistant (le bouton du modèle en haut, ou l’écran de départ) › <strong>Autre service</strong> — ou directement <strong>Utiliser Ollama</strong>, proposé dès qu’Ollama est détecté sur le PC — › <strong>Ollama (sur ce PC)</strong> › <strong>Se connecter au service</strong>, puis choisissez le modèle.</p>
+          </article>
+          <article>
+            <h3>Ce qui est envoyé</h3>
+            <p>À chaque demande seulement : votre texte, le nom de la campagne, les héros (nom, espèce, classe, niveau), la scène, la date du monde, les notes du carnet qui en parlent et la chronique récente. <strong>Jamais</strong> les noms ou appareils des joueurs, leurs messages privés, leurs carnets, ni les codes et clés.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="donnees">
+          <h2>Données et sauvegardes</h2>
+          <article>
+            <h3>Sauvegarder et restaurer</h3>
+            <p>Réglages › Table › Données de la table : <strong>Sauvegarder</strong> réunit toute la table (toutes les campagnes, la médiathèque, le contenu maison) dans un fichier zip, sans les codes ni les clés. <strong>Restaurer</strong> remplace tout par une sauvegarde ; une copie de l’état actuel est gardée d’abord. Idéal pour changer de PC.</p>
+          </article>
+          <article>
+            <h3>Copie dans le nuage</h3>
+            <p><strong>Copie dans le nuage</strong> : choisissez votre dossier OneDrive, Google Drive ou Dropbox (proposé s’il est trouvé sur le PC). Une sauvegarde complète y est copiée chaque jour, les cinq dernières gardées ; votre service la met à l’abri. Se règle sur le PC de la table seulement.</p>
+          </article>
+          <article>
+            <h3>Copies automatiques et corbeille</h3>
+            <p>Une copie de sécurité est faite chaque jour, avant chaque mise à jour de l’application, et avant toute restauration ou remise à zéro. Une campagne supprimée et les fichiers inutilisés partent dans une corbeille du dossier de données (gardée 90 jours).</p>
+          </article>
+          <article>
+            <h3>Revenir à une copie</h3>
+            <p>Réglages › Table › <strong>Copies de sécurité</strong> liste les copies faites sur ce PC, avec leur date et la version qui les a écrites. <strong>Revenir à cette copie</strong> remet toute la table dans cet état ; une copie de l’état actuel est faite d’abord, pour pouvoir y revenir aussi.</p>
+            <p>Après une mise à jour, « Quoi de neuf » propose <strong>Revenir aux données d’avant</strong> : si la nouvelle version vous pose souci, vos campagnes reviennent comme avant en un geste, et la copie indique où retrouver l’installateur de la version précédente.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="reglages">
+          <h2>Réglages de l’appareil</h2>
+          <article>
+            <h3>Affichage</h3>
+            <p>Réglages › Cet appareil › Affichage, propre à chaque appareil :</p>
+            <ul><li><strong>Langue</strong> : français, ou anglais pour l’accueil, la navigation et les réglages ;</li><li><strong>Thème</strong> : Nuit, <strong>Lumineux</strong> (table lumineuse : plein jour, projection) ou <strong>Contraste</strong> (contraste élevé, choisi seul si Windows ou le téléphone le demande) ;</li><li><strong>Taille du texte</strong> : Petit, Normal, Grand ou Très grand (textes et boutons ensemble), pour lire de loin une Surface posée sur la table ou sans lunettes ;</li><li><strong>Couleurs pour daltoniens</strong> : pions et barres de vie dans des teintes que tous distinguent (palette Okabe-Ito), PV écrits en chiffres, initiales sur les portraits des pions ;</li><li><strong>Effets visuels</strong> : complets ou légers (plus fluide, moins de batterie) ;</li><li><strong>Clavier</strong> pour écrire au doigt : celui de l’application (Surface) ou celui du système.</li></ul>
+          </article>
+          <article>
+            <h3>Son et vibrations</h3>
+            <p>Volume général, effets, ambiances, musique ; vibrations au toucher (Android). <strong>Mode débutant</strong> : de petites explications des règles au fil du jeu.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="depannage">
+          <h2>Dépannage</h2>
+          <article>
+            <h3>Les téléphones n’arrivent pas à se connecter</h3>
+            <p>Voir « Connecter les téléphones › Si ça ne passe pas ». Le plus souvent : pas le même wifi, VPN actif, réseau public, pare-feu. Réglages › Aide vérifie le pare-feu et propose la correction.</p>
+          </article>
+          <article>
+            <h3>Pas de son sur un iPhone</h3>
+            <p>Touchez une fois l’écran (bouton « Activer le son » de l’en-tête), et vérifiez que le bouton silencieux sur le côté de l’iPhone n’est pas activé.</p>
+          </article>
+          <article>
+            <h3>C’est lent</h3>
+            <p>Choisissez les <strong>effets légers</strong> (Réglages › Cet appareil › Affichage). Sur les téléphones, la 2D est plus légère que la 3D. Ne pas ouvrir la version de développement (port 5173) : l’adresse du QR code est la bonne.</p>
+          </article>
+          <article>
+            <h3>Signaler un problème, proposer une idée</h3>
+            <p>Réglages › Aide › <strong>Signaler un problème</strong> ou <strong>Proposer une idée</strong> : quelques mots et des détails, c’est envoyé directement à l’éditeur (avec la version et, si vous le laissez coché, l’appareil et les dernières erreurs ; jamais la partie, les fiches ni les codes). Les joueurs ont les mêmes boutons dans leurs réglages ; leurs retours passent par votre application, sans leur nom.</p>
+            <p><strong>Mes retours</strong> montre où en est chacun (reçu, à l’étude, en cours, résolu, non retenu), la réponse de l’éditeur, et la version qui corrige le problème. Hors connexion, le retour attend et part tout seul plus tard. Les idées retenues paraissent sur la <strong>feuille de route</strong> du site, avec leur avancement (le texte du retour, lui, n’est jamais publié).</p>
+          </article>
+          <article>
+            <h3>Écrire au support</h3>
+            <p>Réglages › Aide › <strong>Créer un rapport de diagnostic</strong> enregistre un fichier à joindre au message (ni la campagne, ni les codes). <strong>Quoi de neuf</strong> liste les nouveautés de chaque version.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="gestes">
+          <h2>Gestes et raccourcis</h2>
+          <article>
+            <h3>Au doigt</h3>
+            <ul><li>Carte 2D : un doigt sur un pion le déplace, sur le vide déplace la vue ; deux doigts zooment ; appui long : signal pour tous.</li><li>Construire : deux doigts sur l’élément tenu le tournent et l’agrandissent.</li><li>3D : un doigt fait glisser la carte, deux doigts zooment et tournent, deux doigts glissés ensemble vers le haut ou le bas inclinent la vue ; avec un outil, le second doigt reprend la caméra.</li><li>Vue à la première personne : glisser pour regarder, toucher le sol pour avancer.</li></ul>
+          </article>
+          <article>
+            <h3>À la souris et au clavier</h3>
+            <ul><li>3D : clic gauche tourne, molette zoome, clic droit déplace (avec un outil : clic droit tourne).</li><li>Vue à la première personne : flèches ou ZQSD (WASD aussi).</li><li>Échap ferme la fenêtre ouverte, puis quitte le plein écran.</li></ul>
+          </article>
+        </section>
+        <section class="guide-chapter" id="j-rejoindre">
+          <h2>Rejoindre la table <span class="tag">Joueurs</span></h2>
+          <article>
+            <h3>Entrer</h3>
+            <p>Scannez le QR code de l’écran du MJ avec l’appareil photo, sur le <strong>même wifi</strong> que lui, entrez votre prénom : vous êtes à la table. Sur un autre appareil, entrez le même prénom : le MJ confirme que c’est bien vous, et vous retrouvez votre héros. <strong>Ajouter à l’écran d’accueil</strong> en fait une icône qui rouvre directement la partie.</p>
+          </article>
+          <article>
+            <h3>Un problème, une idée</h3>
+            <p>Réglages (roue dentée) › <strong>Signaler un problème</strong> ou <strong>Proposer une idée</strong> : c’est envoyé à l’éditeur de l’application par le PC du MJ, sans votre nom. <strong>Mes retours</strong> montre où il en est et sa réponse.</p>
+          </article>
+          <article>
+            <h3>Si la connexion coupe</h3>
+            <p>Un nouvel appareil (autre téléphone, navigateur effacé) : entrez le même prénom ; le MJ confirme d’un toucher que c’est bien vous, puis vous retrouvez votre héros. Le téléphone se reconnecte seul au réveil ; ce que vous avez fait entre-temps part au retour. Si la table ne répond plus, votre fiche reste consultable hors connexion. L’adresse a changé ? Rescannez le QR code.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="j-heros">
+          <h2>Votre héros <span class="tag">Joueurs</span></h2>
+          <article>
+            <h3>Créer ou importer</h3>
+            <p><strong>Créer un héros</strong> guide pas à pas (espèce, classe, historique, caractéristiques). <strong>Importer une fiche</strong> reprend un fichier de l’application ou une <strong>fiche PDF remplie</strong> (fiche officielle, export de D&amp;D Beyond) : nom, classe, niveau, caractéristiques, CA, PV, vitesse ; complétez ensuite compétences, sorts et objets.</p>
+            <p>Le MJ peut aussi proposer des <strong>héros prétirés</strong> : ils apparaissent en tête, sous <strong>Héros prêts à jouer</strong> ; touchez-en un pour le jouer tout de suite. « Rendre au MJ » (dans la fiche) le remet à disposition des autres.</p>
+          </article>
+          <article>
+            <h3>La fiche</h3>
+            <p>Tout se lance d’un toucher : caractéristiques, sauvegardes, compétences, attaques. <strong>Repos court</strong> et <strong>repos long</strong> recalculent PV, dés de vie et emplacements. <strong>Montée de niveau</strong> propose les choix de la classe. <strong>Imprimer</strong> donne une fiche papier (ou un PDF) pour jouer sans téléphone.</p>
+            <p>Les onglets (<strong>Carac.</strong>, <strong>Compét.</strong>, <strong>Armes</strong>, <strong>Sorts</strong>, <strong>Sac</strong>) restent en haut de l’écran quand on fait défiler. Sur téléphone, le petit bouton <strong>Jets</strong> à côté ouvre un menu : Normal, Avantage (vert) ou Désavantage (rouge) ; les jets de la fiche en tiennent compte. Chaque arme a ses boutons nommés : <strong>Attaque</strong>, <strong>Dégâts</strong>, <strong>À deux mains</strong> (arme polyvalente), <strong>Critique</strong>.</p>
+          </article>
+          <article>
+            <h3>Le grimoire</h3>
+            <p>Sorts connus et préparés (étoile), emplacements par niveau, DD et attaque calculés ; les étiquettes <strong>concentration</strong> et <strong>rituel</strong> se voient dans la liste. Un sort de zone se pose sur la carte ; la concentration se suit toute seule. Les sorts maison du MJ y figurent aussi.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="j-des">
+          <h2>Les dés <span class="tag">Joueurs</span></h2>
+          <article>
+            <h3>Lancer</h3>
+            <p>Onglet <strong>Dés</strong> : touchez un dé, ou tapez une formule (« 2d6+3 »). Avantage et désavantage se choisissent sur la fiche (bouton <strong>Jets</strong> sur téléphone), au moment du jet. Les jets sont visibles de toute la table, sauf les jets secrets.</p>
+          </article>
+          <article>
+            <h3>Jets demandés et vrais dés</h3>
+            <p>Quand le MJ demande un jet, une bulle s’affiche : touchez <strong>Lancer</strong> (ou <strong>Plus tard</strong>). Si le MJ a choisi les <strong>vrais dés</strong>, lancez vos dés sur la table et tapez la valeur de chacun.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="j-carte">
+          <h2>Combat et carte <span class="tag">Joueurs</span></h2>
+          <article>
+            <h3>Votre tour</h3>
+            <p>Le téléphone prévient quand vous êtes le prochain, puis quand c’est votre tour. Sur la carte, un bandeau dit à qui c’est le tour (« À vous de jouer ! ») et la zone où vous pouvez aller s’éclaire. Touchez <strong>Fin de mon tour</strong> quand vous avez fini, depuis la carte ou l’onglet Combat.</p>
+          </article>
+          <article>
+            <h3>Sur la carte</h3>
+            <p>Glissez votre pion pour le déplacer (les murs et les portes fermées l’arrêtent : passez par une porte ouverte) ; touchez une porte pour l’ouvrir. <strong>Mesurer</strong>, <strong>Fouiller</strong> (objets cachés, pièges, portes secrètes), <strong>Attaquer</strong> (touchez un adversaire : le jet part contre sa CA, le MJ valide) et les gabarits de sorts sont dans la barre de la carte. Appui long : un signal pour tous.</p>
+          </article>
+          <article>
+            <h3>En 3D et à la première personne</h3>
+            <p>Avec l’édition Pro, <strong>3D</strong> montre la carte en volume. Le bouton <strong>Vue subjective</strong> (l’œil) vous met dans les yeux de votre héros : glissez pour regarder autour, touchez le sol pour y aller, touchez une porte pour l’ouvrir. Vous ne voyez que ce que votre héros voit. <strong>Quitter la vue</strong> revient à la table.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="j-carnet">
+          <h2>Carnet et messages <span class="tag">Joueurs</span></h2>
+          <article>
+            <h3>Le carnet</h3>
+            <p><strong>Messages</strong> du MJ (et vos chuchotements à lui), <strong>Mes notes</strong> (privées, ou partagées au MJ), <strong>Documents</strong> remis (lettres, cartes), <strong>Campagne</strong> (fiches partagées par le MJ), <strong>Chronique</strong>. En haut, la <strong>prochaine séance</strong> (bouton Agenda) et le <strong>sondage de dates</strong> à cocher.</p>
+          </article>
+        </section>
+        <section class="guide-chapter" id="j-securite">
+          <h2>Sécurité et enregistrement <span class="tag">Joueurs</span></h2>
+          <article>
+            <h3>Le bouclier</h3>
+            <p>Le bouton <strong>bouclier</strong> en haut de l’écran : <strong>Carte X</strong> (on retire ce qui se passe) ou <strong>Pause</strong>, sans que personne ne sache qui ; les limites de la table ; une proposition anonyme au MJ.</p>
+          </article>
+          <article>
+            <h3>Enregistrement de la séance</h3>
+            <p>Si le MJ propose d’enregistrer la séance pour en faire un résumé, votre téléphone vous demande votre accord : rien ne s’enregistre sans celui de chacun. Pendant l’enregistrement, un voyant rouge reste affiché ; touchez-le pour retirer votre accord : tout s’arrête.</p>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="links">
+          <a href="./">Accueil</a>
+          <a href="guide.html">Guide</a>
+          <a href="nouveautes.html">Nouveautés</a>
+          <a href="licence.html">Licence</a>
+          <a href="confidentialite.html">Confidentialité</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

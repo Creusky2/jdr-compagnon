@@ -638,6 +638,54 @@ code.hash {
   font-size: 0.8rem;
 }
 
+/* feuille de route */
+.roadmap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+}
+
+.road {
+  min-width: 0;
+  padding: 1.2rem 1.3rem;
+  border-radius: var(--radius);
+  background: var(--night-2);
+  border: 1px solid var(--line);
+}
+
+.road h3 {
+  margin: 0 0 0.7rem;
+  font-size: 1.05rem;
+  color: var(--gold-soft);
+}
+
+.road.en-cours h3 {
+  color: var(--arcane);
+}
+
+.road.fait h3 {
+  color: var(--life);
+}
+
+.road ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.55rem;
+  color: var(--ink);
+}
+
+.road .kind {
+  display: inline-block;
+  margin-right: 0.35rem;
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: var(--faint);
+  border: 1px solid var(--line);
+}
+
 /* pages secondaires (nouveautés, textes légaux) */
 .doc {
   padding-block: clamp(2rem, 6vw, 4rem);
@@ -695,6 +743,52 @@ code.hash {
   font-size: 0.95rem;
   color: var(--faint);
   font-weight: 400;
+}
+
+/* guide */
+.guide-toc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  padding: 1.1rem 1.3rem;
+  border-radius: var(--radius);
+  background: var(--night-2);
+  border: 1px solid var(--line);
+}
+
+.guide-toc h2 {
+  margin: 0 0 0.4rem;
+}
+
+.guide-toc ol {
+  margin: 0;
+  padding-left: 1.3rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.guide-chapter {
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  scroll-margin-top: 5rem;
+}
+
+.guide-chapter article {
+  margin-top: 1rem;
+}
+
+.guide-chapter h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.02rem;
+  color: var(--ink);
+}
+
+.guide-chapter p {
+  margin: 0 0 0.6rem;
+}
+
+.guide-chapter strong {
+  color: var(--ink);
 }
 
 /* téléchargement */
