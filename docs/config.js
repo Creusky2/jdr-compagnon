@@ -6,11 +6,11 @@ window.JDR_SITE = {
   "repo": "jdr-compagnon",
   "supportEmail": "creusky@hotmail.com",
   "requestUrl": "",
-  "version": "3.9.0",
+  "version": "3.10.0",
   "news": [
-    "Écran de table : l’échelle réelle se mesure avec une carte bancaire posée sur l’écran (une case = 2,5 cm sous les figurines, sur toutes les cartes) ; mode figurines, où la carte ne bouge plus quand on pose une figurine ou une main.",
-    "Combat : nom masqué pour les monstres (« Créature inconnue », jusque sur leur pion) ; les joueurs voient leur état (indemne, blessé, en sang, hors de combat) ; l’ambiance passe au combat puis revient ; bilan de fin de combat pour toute la table.",
-    "Notes sur la carte : épinglez un rappel pour vous ou une indication visible des joueurs.",
-    "Correction : un monstre vaincu apparaît enfin comme tel sur les téléphones et l’écran de table."
+    "Rechercher partout : Ctrl+K (ou la loupe) trouve un PNJ, un lieu, une carte, une étape, un monstre, un sort, une règle ou un objet magique, même hors connexion.",
+    "Préparer la prochaine séance : une fiche pré-remplie (héros, ouverture, scènes, secrets et indices à cocher, lieux, PNJ, rencontres) dans le carnet.",
+    "Compte rendu de séance en deux versions : celle des joueurs sans les secrets, relue puis envoyée ; la vôtre, complète, gardée dans le carnet.",
+    "Confidentialité : le résumé « Précédemment… » de l’assistant IA ne voit plus les notes secrètes ni les lignes « MJ seulement » de la chronique."
   ]
 };
