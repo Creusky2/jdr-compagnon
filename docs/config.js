@@ -6,14 +6,10 @@ window.JDR_SITE = {
   "repo": "jdr-compagnon",
   "supportEmail": "creusky@hotmail.com",
   "requestUrl": "",
-  "version": "3.11.0",
+  "version": "3.12.0",
   "news": [
-    "Couleurs pour daltoniens (Réglages › Affichage) : pions et barres de vie dans des teintes que tous distinguent, PV écrits en chiffres, initiales sur les portraits des pions.",
-    "Ambiance Calme ou Tension : d’un toucher, l’ambiance monte d’un cran (bruits plus rapprochés, bourdon grave).",
-    "Tables aléatoires : « {2d6} » lance les dés, « [[Trésor]] » tire dans une autre de vos tables.",
-    "Les notes épinglées sur la carte se voient aussi en 3D.",
-    "Rechercher partout : un personnage ouvre directement sa fiche.",
-    "Site : le guide complet en ligne, et une feuille de route des idées retenues.",
-    "Correction : un résultat de la recherche ouvre bien son onglet (la fenêtre, en se refermant, annulait le changement d’onglet)."
+    "Palier d’ambiance par scène et par étape (calme ou tension), appliqué en la lançant ; le combat passe en tension, puis tout revient comme avant.",
+    "Table sans écrans (Réglages › Table) : les téléphones des joueurs gardent la fiche, les dés et le carnet, sans scène, ni carte, ni dés 3D.",
+    "Liens [[…]] vers le carnet dans les étapes du scénario, les documents et la chronique : un toucher ouvre la fiche."
   ]
 };
