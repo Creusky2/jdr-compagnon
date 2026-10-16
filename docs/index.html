@@ -13,7 +13,18 @@
       property="og:description"
       content="Le MJ sur sa tablette, les joueurs sur leur téléphone : cartes, scénario, combat et dés partagés autour de la table."
     />
-    <meta property="og:image" content="images/mj-table.jpg" />
+    <!-- jdr:meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://creusky2.github.io/jdr-compagnon/" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="JDR Compagnon" />
+    <meta property="og:image" content="https://creusky2.github.io/jdr-compagnon/images/mj-table.jpg" />
+    <meta property="og:image:width" content="1440" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="L’écran du MJ : l’histoire, la carte de la crypte et les dés" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://creusky2.github.io/jdr-compagnon/" />
+    <!-- /jdr:meta -->
     <meta name="theme-color" content="#0a0812" />
     <link rel="icon" href="images/favicon-64.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,7 +45,7 @@
           <a href="#fonctions">Fonctions</a>
           <a href="#carnet">Carnet</a>
           <a href="#editions">Gratuit ou Pro</a>
-          <a href="#demande">Demande</a>
+          <a href="#nouveautes">Nouveautés</a>
           <a href="#questions">Questions</a>
         </nav>
         <a class="btn btn-gold" href="#telecharger">Télécharger</a>
@@ -52,7 +63,12 @@
               carte sur son téléphone. Tout se met à jour en direct, sans compte et sans internet.
             </p>
             <div class="cta">
-              <a class="btn btn-gold" href="#telecharger" data-download>Télécharger pour Windows</a>
+              <a
+                class="btn btn-gold"
+                href="https://github.com/Creusky2/jdr-compagnon/releases/download/v3.8.0/JDR-Compagnon-Setup-3.8.0.exe"
+                data-download
+                >Télécharger pour Windows</a
+              >
               <a class="btn btn-ghost" href="#demande">Demander une invitation Pro</a>
             </div>
             <ul class="facts">
@@ -283,6 +299,35 @@
         </div>
       </section>
 
+      <section id="donnees">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Vos données</p>
+            <h2>Votre table reste chez vous</h2>
+          </div>
+          <div class="pledges">
+            <div>
+              <h3>Aucun compte</h3>
+              <p>Ni pour le MJ, ni pour les joueurs. Pas de publicité, pas de statistiques d’utilisation.</p>
+            </div>
+            <div>
+              <h3>Tout reste sur le PC du MJ</h3>
+              <p>Campagnes, fiches et cartes ne quittent pas votre ordinateur. Les téléphones lui parlent sur le wifi de la maison.</p>
+            </div>
+            <div>
+              <h3>Rien ne se perd</h3>
+              <p>
+                Une copie de sécurité chaque jour et avant chaque mise à jour, retour en un geste. Toute la table s’exporte dans un seul
+                fichier, pour la garder ou changer de PC.
+              </p>
+            </div>
+          </div>
+          <p class="note">
+            <a href="confidentialite.html">Ce qui passe par internet, et quand</a> : la politique de confidentialité en entier.
+          </p>
+        </div>
+      </section>
+
       <section id="editions">
         <div class="wrap">
           <div class="section-head">
@@ -290,31 +335,78 @@
             <h2>Toute la table est gratuite</h2>
             <p class="lead">L’édition Pro ajoute quatre fonctions. Pour l’instant, elle est offerte sur invitation.</p>
           </div>
-          <div class="editions">
-            <div class="edition">
-              <h3>Édition gratuite</h3>
-              <p class="price">0 €</p>
-              <ul>
-                <li>Téléphones des joueurs : fiche, dés, carte, carnet</li>
-                <li>Cartes 2D, vision, brouillard, constructeur</li>
-                <li>Scénario, scènes, ambiances, combat</li>
-                <li>Règles 2024 en français, création de personnage</li>
-                <li>Partie de démonstration complète</li>
-                <li>Partage, import, sauvegardes</li>
-              </ul>
-            </div>
-            <div class="edition pro">
-              <h3>Édition Pro</h3>
-              <p class="price">Sur invitation</p>
-              <ul>
-                <li>Vue 3D : figurines animées, relief, eau, vue à la première personne</li>
-                <li>Bibliothèque d’aventures complètes, prêtes à jouer</li>
-                <li>Assistant IA pour préparer et improviser</li>
-                <li>Jouer à distance par internet</li>
-              </ul>
-              <a class="btn btn-gold" href="#demande">Demander une invitation</a>
-            </div>
+          <div class="compare" role="region" aria-label="Comparaison des éditions" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Gratuite<span>0 €</span></th>
+                  <th scope="col" class="pro">Pro<span>sur invitation</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Téléphones des joueurs : fiche, dés, carte</th>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cartes 2D, murs, vision, brouillard, constructeur</th>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Scénario, scènes, ambiances, combat</th>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Règles 2024 en français, création de personnage</th>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Écran de table (télé, projecteur)</th>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Carnet du MJ sur téléphone, hors connexion</th>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sauvegardes, copies automatiques, partage</th>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <th scope="row">Vue 3D : figurines, relief, vue à la première personne</th>
+                  <td><span class="sr-only">non</span>–</td>
+                  <td>★</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bibliothèque d’aventures prêtes à jouer</th>
+                  <td><span class="sr-only">non</span>–</td>
+                  <td>★</td>
+                </tr>
+                <tr>
+                  <th scope="row">Assistant IA (avec votre propre clé)</th>
+                  <td><span class="sr-only">non</span>–</td>
+                  <td>★</td>
+                </tr>
+                <tr>
+                  <th scope="row">Jouer à distance par internet</th>
+                  <td><span class="sr-only">non</span>–</td>
+                  <td>★</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+          <p class="note">
+            Pendant la bêta, l’édition Pro est offerte sur invitation. Rien de ce qui sert à jouer n’y est réservé : la table entière reste
+            gratuite. <a href="#demande">Demander une invitation</a>
+          </p>
         </div>
       </section>
 
@@ -328,12 +420,24 @@
                 Sur le PC ou la tablette Windows du MJ. Les joueurs n’installent rien : ils scannent le QR code affiché par l’application.
               </p>
               <div class="cta">
-                <a class="btn btn-gold" href="#" data-download>Télécharger pour Windows</a>
+                <a
+                  class="btn btn-gold"
+                  href="https://github.com/Creusky2/jdr-compagnon/releases/download/v3.8.0/JDR-Compagnon-Setup-3.8.0.exe"
+                  data-download
+                  >Télécharger pour Windows</a
+                >
+                <a class="btn btn-ghost" href="nouveautes.html">Nouveautés</a>
               </div>
-              <p class="version" id="version">Windows 10 et 11, 64 bits. Les mises à jour arrivent ensuite toutes seules.</p>
+              <p class="version" id="version">
+                <!-- jdr:version -->Version 3.8.0 du 16 octobre 2026 · 105 Mo · Windows 10 et 11, 64 bits. Les mises à jour arrivent ensuite toutes seules.<!-- /jdr:version -->
+              </p>
+              <p class="version hash-line">
+                <!-- jdr:empreinte -->Empreinte SHA-256 de l’installateur, pour vérifier qu’il n’a pas été modifié : <code class="hash">5567b9a377cf0d4951f1bcffadb74d6298b1b7e0c28a14009a53b6df4771c02a</code> (dans PowerShell : <code>Get-FileHash</code> suivi du nom du fichier).<!-- /jdr:empreinte -->
+              </p>
               <p class="version">
                 <strong>Déjà installée ?</strong> Rien à faire : l’application télécharge la nouvelle version d’elle-même et l’installe à la
-                fermeture. Lancer l’installateur par-dessus fait la même chose, sans toucher à vos campagnes, fiches ni licence.
+                fermeture, après une copie de sécurité de vos données. Lancer l’installateur par-dessus fait la même chose, sans toucher à
+                vos campagnes, fiches ni licence.
               </p>
             </div>
             <ol>
@@ -348,6 +452,32 @@
               <li>Invitation Pro reçue : touchez « Activer dans JDR Compagnon », ou collez la clé dans Réglages › Édition Pro.</li>
             </ol>
           </div>
+        </div>
+      </section>
+
+      <section id="nouveautes">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Nouveautés</p>
+            <h2>Une application qui avance</h2>
+          </div>
+          <div class="releases">
+            <!-- jdr:nouveautes -->
+            <article class="release">
+              <p class="release-head"><span class="tag">3.8.0</span><time>16 octobre 2026</time></p>
+              <ul><li><strong>Mises à jour sans risque</strong> : une copie de vos données est faite avant chaque mise à jour.</li><li><strong>Site</strong> : téléchargement direct avec la taille et l’empreinte du fichier, page des nouveautés, tableau gratuit / Pro, réponses aux questions qu’on se pose avant d’installer.</li></ul>
+            </article>
+            <article class="release">
+              <p class="release-head"><span class="tag">3.7.0</span><time>13 octobre 2026</time></p>
+              <ul><li><strong>Retours à l’éditeur</strong> : Réglages › Aide › « Signaler un problème » ou « Proposer une idée ».</li></ul>
+            </article>
+            <article class="release">
+              <p class="release-head"><span class="tag">3.6.0</span><time>13 octobre 2026</time></p>
+              <ul><li><strong>Licences</strong> : l&#39;éditeur peut désormais offrir ou désactiver une clé Pro depuis son téléphone. Rien ne change pour vous : votre clé reste valable.</li></ul>
+            </article>
+          <!-- /jdr:nouveautes -->
+          </div>
+          <p class="note"><a href="nouveautes.html">Toutes les nouveautés, version par version</a></p>
         </div>
       </section>
 
@@ -436,10 +566,47 @@
             </p>
           </details>
           <details>
-            <summary>Quoi de neuf dans la dernière version ?</summary>
-            <ul class="news" id="news">
-              <li>Les règles 2024 en français officiel, le partage des aventures, la photo → carte.</li>
-            </ul>
+            <summary>Une mise à jour peut-elle abîmer mes campagnes ?</summary>
+            <p>
+              Avant chaque mise à jour, l’application fait une copie de sécurité de toute la table. Si quelque chose ne va pas, « Revenir
+              aux données d’avant » remet tout comme avant, en un geste (Réglages › Table › Copies de sécurité).
+            </p>
+          </details>
+          <details>
+            <summary>Est-ce légal d’avoir les règles de D&amp;D dans l’application ?</summary>
+            <p>
+              Oui. Les règles viennent du SRD 5.2.1, le document de référence que l’éditeur du jeu publie gratuitement en français sous
+              licence Creative Commons (CC BY 4.0). Les livres du commerce ne sont pas inclus.
+            </p>
+          </details>
+          <details>
+            <summary>Qu’est-ce qui passe par internet ?</summary>
+            <p>
+              Seulement ce que vous voyez venir : les mises à jour, les annonces de l’éditeur, l’activation d’une licence Pro, les retours
+              que vous envoyez, l’assistant IA si vous le réglez, et le jeu à distance si vous l’ouvrez.
+              <a href="confidentialite.html">Le détail dans la politique de confidentialité.</a>
+            </p>
+          </details>
+          <details>
+            <summary>Et si je n’ai plus l’édition Pro ?</summary>
+            <p>
+              Vos campagnes restent intactes et toujours ouvertes : seules la vue 3D, la bibliothèque d’aventures, l’assistant IA et le jeu
+              à distance se mettent en pause. La licence se vérifie sur votre PC, sans connexion.
+            </p>
+          </details>
+          <details>
+            <summary>Sur Mac, iPad ou Linux ?</summary>
+            <p>
+              L’application du MJ est pour Windows 10 et 11. Les joueurs, eux, utilisent n’importe quel téléphone ou tablette, Android comme
+              iPhone, et le carnet du MJ s’ouvre dans tout navigateur, même hors connexion.
+            </p>
+          </details>
+          <details>
+            <summary>Un souci, une idée ?</summary>
+            <p>
+              Dans l’application : Réglages › Aide › « Signaler un problème » ou « Proposer une idée ». Les joueurs ont les mêmes boutons
+              sur leur téléphone. Vous suivez ensuite la réponse dans « Mes retours ».
+            </p>
           </details>
         </div>
       </section>
@@ -450,9 +617,11 @@
         <div class="links">
           <a href="#telecharger">Télécharger</a>
           <a href="#demande">Contact</a>
-          <a href="legal/licence.txt">Licence</a>
-          <a href="legal/confidentialite.txt">Confidentialité</a>
-          <a href="#" id="releases">Toutes les versions</a>
+          <a href="nouveautes.html">Nouveautés</a>
+          <a href="licence.html">Licence</a>
+          <a href="confidentialite.html">Confidentialité</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="https://github.com/Creusky2/jdr-compagnon/releases">Toutes les versions</a>
         </div>
         <p>
           JDR Compagnon est un outil indépendant, compatible avec la cinquième édition. Cette œuvre inclut du matériel issu du System

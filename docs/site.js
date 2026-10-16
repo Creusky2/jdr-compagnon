@@ -1,62 +1,9 @@
-// Site de présentation : lien de téléchargement de la dernière version (GitHub), demande par
-// formulaire (adresse d'envoi réglée par l'éditeur) ou par courriel préparé, nouveautés.
+// Site de présentation : demande par formulaire (adresse d'envoi réglée par l'éditeur) ou par
+// courriel préparé. Le lien de téléchargement, la version et les nouveautés sont écrits dans la page
+// à la construction (scripts/site-build.mjs) : ils marchent sans JavaScript.
 (function () {
   'use strict';
   var cfg = window.JDR_SITE || {};
-  var releases = 'https://github.com/' + cfg.owner + '/' + cfg.repo + '/releases/latest';
-
-  // ---------- téléchargement : l'installateur de la dernière version ----------
-  var links = document.querySelectorAll('[data-download]');
-  links.forEach(function (a) {
-    a.href = releases;
-  });
-  var all = document.getElementById('releases');
-  if (all) all.href = 'https://github.com/' + cfg.owner + '/' + cfg.repo + '/releases';
-  if (cfg.owner && window.fetch) {
-    fetch('https://api.github.com/repos/' + cfg.owner + '/' + cfg.repo + '/releases/latest', {
-      headers: { accept: 'application/vnd.github+json' },
-    })
-      .then(function (r) {
-        return r.ok ? r.json() : null;
-      })
-      .then(function (rel) {
-        if (!rel || !rel.assets) return;
-        var setup = rel.assets.filter(function (x) {
-          return /Setup-.*\.exe$/i.test(x.name);
-        })[0];
-        if (!setup) return;
-        links.forEach(function (a) {
-          a.href = setup.browser_download_url;
-        });
-        var v = document.getElementById('version');
-        var mb = Math.round(setup.size / 1048576);
-        var when = rel.published_at
-          ? new Date(rel.published_at).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })
-          : '';
-        if (v)
-          v.textContent =
-            'Version ' +
-            String(rel.tag_name || '').replace(/^v/, '') +
-            (when ? ' du ' + when : '') +
-            ' · ' +
-            mb +
-            ' Mo · Windows 10 et 11, 64 bits. Les mises à jour arrivent ensuite toutes seules.';
-      })
-      .catch(function () {
-        /* hors ligne ou limite de l'API : le lien vers la page des versions reste */
-      });
-  }
-
-  // ---------- nouveautés de la dernière version ----------
-  var news = document.getElementById('news');
-  if (news && cfg.news && cfg.news.length) {
-    news.textContent = '';
-    cfg.news.forEach(function (line) {
-      var li = document.createElement('li');
-      li.textContent = line;
-      news.appendChild(li);
-    });
-  }
   var copy = document.getElementById('copyright');
   if (copy) copy.textContent = '© ' + new Date().getFullYear() + ' ' + (cfg.publisher || '') + ' · ' + (cfg.product || 'JDR Compagnon');
 

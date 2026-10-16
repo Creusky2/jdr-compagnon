@@ -6,8 +6,9 @@ window.JDR_SITE = {
   "repo": "jdr-compagnon",
   "supportEmail": "creusky@hotmail.com",
   "requestUrl": "",
-  "version": "3.7.0",
+  "version": "3.8.0",
   "news": [
-    "Retours à l’éditeur : Réglages › Aide › « Signaler un problème » ou « Proposer une idée ». Les joueurs ont les mêmes boutons dans leurs réglages. « Mes retours » montre où en est chacun (reçu, à l’étude, en cours, résolu) et la réponse de l’éditeur."
+    "Mises à jour sans risque : une copie de vos données est faite avant chaque mise à jour. « Quoi de neuf » propose d’y revenir en un geste, et Réglages › Table › Copies de sécurité liste toutes les copies du PC.",
+    "Site : téléchargement direct avec la taille et l’empreinte du fichier, page des nouveautés, tableau gratuit / Pro, réponses aux questions qu’on se pose avant d’installer."
   ]
 };

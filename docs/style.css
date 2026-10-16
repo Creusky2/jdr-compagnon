@@ -479,6 +479,224 @@ blockquote {
   color: var(--gold);
 }
 
+/* vos données */
+.pledges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pledges > div {
+  padding: 1.2rem 1.3rem;
+  border-radius: var(--radius);
+  background: var(--night-2);
+  border: 1px solid var(--line);
+  min-width: 0;
+}
+
+.pledges h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  color: var(--gold-soft);
+}
+
+.pledges p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* gratuit ou Pro */
+.compare {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--night-2);
+  margin-bottom: 1rem;
+}
+
+.compare table {
+  width: 100%;
+  min-width: 30rem;
+  border-collapse: collapse;
+}
+
+.compare th,
+.compare td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  font-weight: 400;
+}
+
+.compare tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.compare thead th {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  vertical-align: bottom;
+}
+
+.compare thead th span {
+  display: block;
+  font-family: var(--body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--faint);
+}
+
+.compare thead th.pro {
+  color: var(--gold);
+}
+
+.compare td {
+  width: 7.5rem;
+  text-align: center;
+  color: var(--life);
+  font-weight: 700;
+}
+
+.compare td:last-child {
+  color: var(--gold);
+}
+
+.compare tbody th {
+  color: var(--ink);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* nouveautés */
+.releases {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.release {
+  min-width: 0;
+}
+
+.releases .release {
+  padding: 1.2rem 1.3rem;
+  border-radius: var(--radius);
+  background: var(--night-2);
+  border: 1px solid var(--line);
+}
+
+.release-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 0.6rem;
+  color: var(--faint);
+  font-size: 0.9rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgb(242 184 75 / 0.45);
+  color: var(--gold-soft);
+  font-family: var(--body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.release ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.45rem;
+  color: var(--muted);
+}
+
+.release strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.hash-line:empty {
+  display: none;
+}
+
+code.hash {
+  overflow-wrap: anywhere;
+  font-size: 0.8rem;
+}
+
+/* pages secondaires (nouveautés, textes légaux) */
+.doc {
+  padding-block: clamp(2rem, 6vw, 4rem);
+}
+
+.doc .wrap {
+  max-width: 50rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.doc h1 {
+  font-family: var(--display);
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  margin: 0 0 0.5rem;
+  text-wrap: balance;
+}
+
+.doc h2 {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  color: var(--gold-soft);
+  margin: 1.2rem 0 0;
+}
+
+.doc p,
+.doc li {
+  color: var(--muted);
+}
+
+.doc ul {
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.doc .release {
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.doc .release ul {
+  margin: 0;
+}
+
+.doc .release h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0 0 0.6rem;
+}
+
+.doc .release time {
+  font-family: var(--body);
+  font-size: 0.95rem;
+  color: var(--faint);
+  font-weight: 400;
+}
+
 /* téléchargement */
 .download {
   display: grid;
